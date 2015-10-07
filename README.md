@@ -38,3 +38,5 @@ Your application must incorporate some sort of data persistence. In this unit we
 https://vimeo.com/75230943
 
 **Instagram:**
+
+http://www.imore.com/best-journaling-apps-iphone-and-ipad-day-one-momento-askt-and-more
