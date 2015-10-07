@@ -30,6 +30,7 @@ Your application must incorporate some sort of data persistence. In this unit we
   * Tasks that are *in-progress*
   * For review / merge
 
+![image](https://github.com/mikekavouras/unit-2-final-project/blob/master/images/trello.png?raw=true)
  
 ## Bonus
 
