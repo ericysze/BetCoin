@@ -28,7 +28,7 @@ Your application must incorporate some sort of data persistence. In this unit we
 * Your project plan should fall into the following categories:
   * Individual tasks
   * Tasks that are *in-progress*
-  * *For review / merge
+  * For review / merge
 
  
 ## Bonus
