@@ -26,7 +26,7 @@ Your application must incorporate some sort of data persistence. In this unit we
 * A PROJECT PLAN IS REQUIRED
 * You must use Trello, or something very similar. 
 * Your project plan should fall into the following categories:
-  * Separate tasks
+  * Individual tasks
   * Tasks that are *in-progress*
   * *For review / merge
 
