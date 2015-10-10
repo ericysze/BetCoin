@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2219AC37CE886DFBCB980 /* libPods.a */; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA21BC9698A00E1A7F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CBA11BC9698A00E1A7F7 /* ViewController.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
 		69D4CBA71BC9698A00E1A7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */; };
 		69D4CBAA1BC9698A00E1A7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */; };
+		69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F431BC99F1200CDC747 /* BitcoinTicker.m */; settings = {ASSET_TAGS = (); }; };
+		69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,12 @@
 		69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4CBA91BC9698A00E1A7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D4CBAB1BC9698A00E1A7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F06F421BC99F1200CDC747 /* BitcoinTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcoinTicker.h; sourceTree = "<group>"; };
+		69F06F431BC99F1200CDC747 /* BitcoinTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinTicker.m; sourceTree = "<group>"; };
+		69F06F451BC9A40B00CDC747 /* CryptonatorTickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptonatorTickerManager.h; sourceTree = "<group>"; };
+		69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptonatorTickerManager.m; sourceTree = "<group>"; };
+		AA933A20C56ED39AE84730BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8C2219AC37CE886DFBCB980 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				69D4CB991BC9698A00E1A7F7 /* CryptonatorDemo */,
 				69D4CB981BC9698A00E1A7F7 /* Products */,
+				9DCAF3DEFF4EADD7859357E4 /* Pods */,
+				A18749843D6712FBBA42E357 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,10 @@
 			children = (
 				69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */,
 				69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */,
+				69F06F451BC9A40B00CDC747 /* CryptonatorTickerManager.h */,
+				69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */,
+				69F06F421BC99F1200CDC747 /* BitcoinTicker.h */,
+				69F06F431BC99F1200CDC747 /* BitcoinTicker.m */,
 				69D4CBA01BC9698A00E1A7F7 /* ViewController.h */,
 				69D4CBA11BC9698A00E1A7F7 /* ViewController.m */,
 				69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */,
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9DCAF3DEFF4EADD7859357E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA933A20C56ED39AE84730BC /* Pods.debug.xcconfig */,
+				63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A18749843D6712FBBA42E357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8C2219AC37CE886DFBCB980 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D4CBAE1BC9698A00E1A7F7 /* Build configuration list for PBXNativeTarget "CryptonatorDemo" */;
 			buildPhases = (
+				B6D1FECD6850C382A3DC0264 /* Check Pods Manifest.lock */,
 				69D4CB931BC9698A00E1A7F7 /* Sources */,
 				69D4CB941BC9698A00E1A7F7 /* Frameworks */,
 				69D4CB951BC9698A00E1A7F7 /* Resources */,
+				3CF666F152D3AFE01340974B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +181,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CF666F152D3AFE01340974B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D1FECD6850C382A3DC0264 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69D4CB931BC9698A00E1A7F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +221,8 @@
 			files = (
 				69D4CBA21BC9698A00E1A7F7 /* ViewController.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
+				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
+				69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */,
 				69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +333,7 @@
 		};
 		69D4CBAF1BC9698A00E1A7F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA933A20C56ED39AE84730BC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CryptonatorDemo/Info.plist;
@@ -273,6 +345,7 @@
 		};
 		69D4CBB01BC9698A00E1A7F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CryptonatorDemo/Info.plist;
@@ -301,6 +374,7 @@
 				69D4CBB01BC9698A00E1A7F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

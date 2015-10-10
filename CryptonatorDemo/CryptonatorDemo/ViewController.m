@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import "CryptonatorTickerManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
+    [manager getBitcoinTickerUpdateWithCallbackBlock:^{
+        NSLog(@"%f",manager.bitcoinTicker.price);
+    }];
 }
 
 @end
