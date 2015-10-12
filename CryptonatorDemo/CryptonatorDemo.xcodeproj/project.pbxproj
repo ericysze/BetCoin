@@ -8,24 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2219AC37CE886DFBCB980 /* libPods.a */; };
+		691277E41BCABAA400946438 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691277E31BCABAA400946438 /* TickerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; settings = {ASSET_TAGS = (); }; };
+		69820AEA1BCAE47200A2AFDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE81BCAE47200A2AFDE /* menu.png */; settings = {ASSET_TAGS = (); }; };
+		69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE91BCAE47200A2AFDE /* menu@2x.png */; settings = {ASSET_TAGS = (); }; };
+		69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFE1BCAF55200A2AFDE /* Key Filled-512.png */; settings = {ASSET_TAGS = (); }; };
+		69820B051BCAF55200A2AFDE /* Key-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFF1BCAF55200A2AFDE /* Key-512.png */; settings = {ASSET_TAGS = (); }; };
+		69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B001BCAF55200A2AFDE /* Literature Filled-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B011BCAF55200A2AFDE /* Literature-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B081BCAF55200A2AFDE /* News-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B021BCAF55200A2AFDE /* News-512.png */; settings = {ASSET_TAGS = (); }; };
+		69820B091BCAF55200A2AFDE /* News Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B031BCAF55200A2AFDE /* News Filled-512.png */; settings = {ASSET_TAGS = (); }; };
+		69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0A1BCB024100A2AFDE /* up-arrow-icon.png */; settings = {ASSET_TAGS = (); }; };
+		69820B0D1BCB024A00A2AFDE /* down-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0C1BCB024A00A2AFDE /* down-arrow-icon.png */; settings = {ASSET_TAGS = (); }; };
+		69820B121BCB09A200A2AFDE /* orangeuparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */; settings = {ASSET_TAGS = (); }; };
+		69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */; settings = {ASSET_TAGS = (); }; };
+		69820B141BCB09A200A2AFDE /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B101BCB09A200A2AFDE /* uparrow.png */; settings = {ASSET_TAGS = (); }; };
+		69820B151BCB09A200A2AFDE /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B111BCB09A200A2AFDE /* downarrow.png */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
-		69D4CBA21BC9698A00E1A7F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CBA11BC9698A00E1A7F7 /* ViewController.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
 		69D4CBA71BC9698A00E1A7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */; };
 		69D4CBAA1BC9698A00E1A7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */; };
 		69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F431BC99F1200CDC747 /* BitcoinTicker.m */; settings = {ASSET_TAGS = (); }; };
 		69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */; settings = {ASSET_TAGS = (); }; };
+		69F06F491BC9B22500CDC747 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F06F481BC9B22500CDC747 /* CoreGraphics.framework */; };
+		69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		691277E21BCABAA400946438 /* TickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerViewController.h; sourceTree = "<group>"; };
+		691277E31BCABAA400946438 /* TickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerViewController.m; sourceTree = "<group>"; };
+		69820AE61BCAE43500A2AFDE /* bitcoinicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoinicon.png; sourceTree = "<group>"; };
+		69820AE81BCAE47200A2AFDE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		69820AE91BCAE47200A2AFDE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		69820AEC1BCAEC1000A2AFDE /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
+		69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
+		69820AFE1BCAF55200A2AFDE /* Key Filled-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key Filled-512.png"; sourceTree = "<group>"; };
+		69820AFF1BCAF55200A2AFDE /* Key-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key-512.png"; sourceTree = "<group>"; };
+		69820B001BCAF55200A2AFDE /* Literature Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Literature Filled-100.png"; sourceTree = "<group>"; };
+		69820B011BCAF55200A2AFDE /* Literature-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Literature-100.png"; sourceTree = "<group>"; };
+		69820B021BCAF55200A2AFDE /* News-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-512.png"; sourceTree = "<group>"; };
+		69820B031BCAF55200A2AFDE /* News Filled-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Filled-512.png"; sourceTree = "<group>"; };
+		69820B0A1BCB024100A2AFDE /* up-arrow-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow-icon.png"; sourceTree = "<group>"; };
+		69820B0C1BCB024A00A2AFDE /* down-arrow-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-arrow-icon.png"; sourceTree = "<group>"; };
+		69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeuparrow.png; sourceTree = "<group>"; };
+		69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangedownarrow 2.png"; sourceTree = "<group>"; };
+		69820B101BCB09A200A2AFDE /* uparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uparrow.png; sourceTree = "<group>"; };
+		69820B111BCB09A200A2AFDE /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		69D4CBA01BC9698A00E1A7F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		69D4CBA11BC9698A00E1A7F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69D4CBA41BC9698A00E1A7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4CBA91BC9698A00E1A7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +69,9 @@
 		69F06F431BC99F1200CDC747 /* BitcoinTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinTicker.m; sourceTree = "<group>"; };
 		69F06F451BC9A40B00CDC747 /* CryptonatorTickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptonatorTickerManager.h; sourceTree = "<group>"; };
 		69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptonatorTickerManager.m; sourceTree = "<group>"; };
+		69F06F481BC9B22500CDC747 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		69F06F4B1BC9B96400CDC747 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		AA933A20C56ED39AE84730BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C8C2219AC37CE886DFBCB980 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -43,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F06F491BC9B22500CDC747 /* CoreGraphics.framework in Frameworks */,
 				0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +89,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69820AE51BCAE43500A2AFDE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */,
+				69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */,
+				69820B101BCB09A200A2AFDE /* uparrow.png */,
+				69820B111BCB09A200A2AFDE /* downarrow.png */,
+				69820B0C1BCB024A00A2AFDE /* down-arrow-icon.png */,
+				69820B0A1BCB024100A2AFDE /* up-arrow-icon.png */,
+				69820AFE1BCAF55200A2AFDE /* Key Filled-512.png */,
+				69820AFF1BCAF55200A2AFDE /* Key-512.png */,
+				69820B001BCAF55200A2AFDE /* Literature Filled-100.png */,
+				69820B011BCAF55200A2AFDE /* Literature-100.png */,
+				69820B021BCAF55200A2AFDE /* News-512.png */,
+				69820B031BCAF55200A2AFDE /* News Filled-512.png */,
+				69820AE81BCAE47200A2AFDE /* menu.png */,
+				69820AE91BCAE47200A2AFDE /* menu@2x.png */,
+				69820AE61BCAE43500A2AFDE /* bitcoinicon.png */,
+			);
+			name = Images;
+			path = SWRevealViewController/Images;
+			sourceTree = "<group>";
+		};
 		69D4CB8E1BC9698900E1A7F7 = {
 			isa = PBXGroup;
 			children = (
@@ -71,17 +133,21 @@
 		69D4CB991BC9698A00E1A7F7 /* CryptonatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				69F06F4A1BC9B96400CDC747 /* SWRevealViewController */,
 				69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */,
 				69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */,
 				69F06F451BC9A40B00CDC747 /* CryptonatorTickerManager.h */,
 				69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */,
 				69F06F421BC99F1200CDC747 /* BitcoinTicker.h */,
 				69F06F431BC99F1200CDC747 /* BitcoinTicker.m */,
-				69D4CBA01BC9698A00E1A7F7 /* ViewController.h */,
-				69D4CBA11BC9698A00E1A7F7 /* ViewController.m */,
+				691277E21BCABAA400946438 /* TickerViewController.h */,
+				691277E31BCABAA400946438 /* TickerViewController.m */,
+				69820AEC1BCAEC1000A2AFDE /* OptionsTableViewController.h */,
+				69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */,
 				69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */,
-				69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */,
 				69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */,
+				69820AE51BCAE43500A2AFDE /* Images */,
+				69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */,
 				69D4CBAB1BC9698A00E1A7F7 /* Info.plist */,
 				69D4CB9A1BC9698A00E1A7F7 /* Supporting Files */,
 			);
@@ -96,6 +162,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		69F06F4A1BC9B96400CDC747 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				69F06F4B1BC9B96400CDC747 /* SWRevealViewController.h */,
+				69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		9DCAF3DEFF4EADD7859357E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +183,7 @@
 		A18749843D6712FBBA42E357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69F06F481BC9B22500CDC747 /* CoreGraphics.framework */,
 				C8C2219AC37CE886DFBCB980 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -174,8 +250,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D4CBAA1BC9698A00E1A7F7 /* LaunchScreen.storyboard in Resources */,
+				69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */,
+				69820AEA1BCAE47200A2AFDE /* menu.png in Resources */,
 				69D4CBA71BC9698A00E1A7F7 /* Assets.xcassets in Resources */,
+				69820B0D1BCB024A00A2AFDE /* down-arrow-icon.png in Resources */,
+				69820B151BCB09A200A2AFDE /* downarrow.png in Resources */,
+				69820B091BCAF55200A2AFDE /* News Filled-512.png in Resources */,
+				69820B051BCAF55200A2AFDE /* Key-512.png in Resources */,
+				69820B121BCB09A200A2AFDE /* orangeuparrow.png in Resources */,
 				69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */,
+				69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */,
+				69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */,
+				69820B081BCAF55200A2AFDE /* News-512.png in Resources */,
+				69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */,
+				69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */,
+				69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */,
+				69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */,
+				69820B141BCB09A200A2AFDE /* uparrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D4CBA21BC9698A00E1A7F7 /* ViewController.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
+				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,
+				69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */,
+				691277E41BCABAA400946438 /* TickerViewController.m in Sources */,
 				69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */,
 				69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */,
 			);
@@ -337,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CryptonatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.Derek316x.CryptonatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CryptonatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.Derek316x.CryptonatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
