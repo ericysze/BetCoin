@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BitcoinPrediction.h"
 
 @interface PredictionTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *leftLabel;
+@property (nonatomic) BitcoinPrediction *prediction;
+@property (weak, nonatomic) IBOutlet UILabel *priceAtInstantOfPredictionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *targetDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeToTargetDateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *predictionArrowImage;
 
 + (NSString *)reuseIdentifier;
 

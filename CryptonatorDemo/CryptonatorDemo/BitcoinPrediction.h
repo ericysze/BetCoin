@@ -18,8 +18,8 @@ typedef NS_ENUM(NSInteger, Prediction) {
 @property (nonatomic) double priceAtInstantOfPrediction;
 @property (nonatomic) Prediction PredictionType;
 
-@property (nonatomic) NSDate *dateAtInstantOfPrediction;
 @property (nonatomic) NSDate *targetDate;
+@property (nonatomic) NSTimeInterval *timeToTargetDate;
 
 @end
 

@@ -32,13 +32,79 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCw-BR-fiO">
+                                <rect key="frame" x="127" y="64" width="44.5" height="27.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-5g-LrL" userLabel="Date Container">
+                                <rect key="frame" x="174" y="0.0" width="192" height="156"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNF-N6-8Q6">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="93.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 day 43 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEg-nT-btW">
+                                                <rect key="frame" x="30" y="35" width="131.5" height="23.5"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="YEg-nT-btW" firstAttribute="centerY" secondItem="vNF-N6-8Q6" secondAttribute="centerY" id="buH-j7-ctE"/>
+                                            <constraint firstItem="YEg-nT-btW" firstAttribute="centerX" secondItem="vNF-N6-8Q6" secondAttribute="centerX" id="pPQ-9s-VD9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-WS-rqz">
+                                        <rect key="frame" x="0.0" y="93" width="192" height="63"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/31 @ 9:32PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuf-Qn-dL8">
+                                                <rect key="frame" x="32" y="19" width="126.5" height="23.5"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="iuf-Qn-dL8" firstAttribute="centerY" secondItem="TYe-WS-rqz" secondAttribute="centerY" id="Kh2-0k-Y5M"/>
+                                            <constraint firstItem="iuf-Qn-dL8" firstAttribute="centerX" secondItem="TYe-WS-rqz" secondAttribute="centerX" id="eIg-YS-ELX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TYe-WS-rqz" secondAttribute="bottom" id="62n-VZ-M52"/>
+                                    <constraint firstItem="vNF-N6-8Q6" firstAttribute="height" secondItem="Jqm-5g-LrL" secondAttribute="height" multiplier="0.6" id="7jD-j2-nFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="TYe-WS-rqz" secondAttribute="trailing" id="Ju2-z5-8pO"/>
+                                    <constraint firstItem="vNF-N6-8Q6" firstAttribute="leading" secondItem="Jqm-5g-LrL" secondAttribute="leading" id="Y3g-ae-s9i"/>
+                                    <constraint firstItem="vNF-N6-8Q6" firstAttribute="top" secondItem="Jqm-5g-LrL" secondAttribute="top" id="fmY-fz-U3h"/>
+                                    <constraint firstAttribute="trailing" secondItem="vNF-N6-8Q6" secondAttribute="trailing" id="iFE-7Q-Gwv"/>
+                                    <constraint firstItem="TYe-WS-rqz" firstAttribute="top" secondItem="vNF-N6-8Q6" secondAttribute="bottom" id="j37-pX-nhd"/>
+                                    <constraint firstItem="TYe-WS-rqz" firstAttribute="leading" secondItem="Jqm-5g-LrL" secondAttribute="leading" id="nND-8R-pjB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jqm-5g-LrL" secondAttribute="bottom" id="2gZ-Ye-kDk"/>
                             <constraint firstItem="Noi-kL-SMP" firstAttribute="leading" secondItem="TTx-xe-wLK" secondAttribute="leading" id="7Zz-c9-9nu"/>
+                            <constraint firstItem="zCw-BR-fiO" firstAttribute="centerY" secondItem="Noi-kL-SMP" secondAttribute="centerY" id="cLO-Yv-uvV"/>
                             <constraint firstAttribute="height" constant="100" id="mg2-vS-Pcs"/>
                             <constraint firstItem="Noi-kL-SMP" firstAttribute="height" secondItem="TTx-xe-wLK" secondAttribute="height" multiplier="0.8" id="ne3-9o-r8m"/>
+                            <constraint firstAttribute="trailing" secondItem="Jqm-5g-LrL" secondAttribute="trailing" id="ozZ-d3-x3U"/>
+                            <constraint firstItem="Jqm-5g-LrL" firstAttribute="top" secondItem="TTx-xe-wLK" secondAttribute="top" id="pj6-cu-tyD"/>
+                            <constraint firstItem="Jqm-5g-LrL" firstAttribute="leading" secondItem="zCw-BR-fiO" secondAttribute="trailing" constant="2" id="q2P-zN-7QY"/>
+                            <constraint firstItem="zCw-BR-fiO" firstAttribute="leading" secondItem="Noi-kL-SMP" secondAttribute="trailing" constant="4" id="xZB-Ow-W8c"/>
                             <constraint firstItem="Noi-kL-SMP" firstAttribute="centerY" secondItem="TTx-xe-wLK" secondAttribute="centerY" id="zgc-pV-dLu"/>
                         </constraints>
                         <variation key="default">
@@ -57,6 +123,12 @@
                 </constraints>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="predictionArrowImage" destination="Noi-kL-SMP" id="x0u-Ae-aNT"/>
+                <outlet property="priceAtInstantOfPredictionLabel" destination="zCw-BR-fiO" id="Lw8-fB-FEb"/>
+                <outlet property="targetDateLabel" destination="iuf-Qn-dL8" id="Y5g-gi-9xq"/>
+                <outlet property="timeToTargetDateLabel" destination="YEg-nT-btW" id="pHE-TU-yMi"/>
+            </connections>
             <point key="canvasLocation" x="419" y="-3349.5"/>
         </tableViewCell>
     </objects>
