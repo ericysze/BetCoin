@@ -8,10 +8,12 @@
 
 #import "TickerViewController.h"
 #import "SWRevealViewController.h"
+#import "CryptonatorTickerManager.h"
 #import "PredictionTableViewCell.h"
 
 @interface TickerViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *tickerPriceLabel;
 
 @end
 
@@ -20,6 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
+    
+    //get latest BTC price from Cryptonator API every 30 seconds
+    [manager getBitcoinTickerUpdateWithCallbackBlock:^{
+        self.tickerPriceLabel.text = [@"BTC: $" stringByAppendingString:[NSString stringWithFormat:@"%.2f",manager.bitcoinTicker.price]];
+    }];
+    
     //setup RevealViewController functionality
     if (self.revealViewController){
         [self.sidebarButton setTarget: self.revealViewController];
@@ -27,7 +37,7 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     
-    //UITableViewProtocol
+    //UITableView Protocol
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     

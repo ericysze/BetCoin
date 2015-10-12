@@ -37,9 +37,9 @@
     }];
 }
 
--(double)getCurrentBitcoinPrice{ //will return the price of last update
-    [self getBitcoinTickerUpdateWithCallbackBlock:^{}];
-    return self.bitcoinTicker.price;
-}
+//-(double)getCurrentBitcoinPrice{ //will return the price of last update
+//    [self getBitcoinTickerUpdateWithCallbackBlock:^{}];
+//    return self.bitcoinTicker.price;
+//}
 
 @end
