@@ -25,6 +25,20 @@
 		69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */; settings = {ASSET_TAGS = (); }; };
 		69820B141BCB09A200A2AFDE /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B101BCB09A200A2AFDE /* uparrow.png */; settings = {ASSET_TAGS = (); }; };
 		69820B151BCB09A200A2AFDE /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B111BCB09A200A2AFDE /* downarrow.png */; settings = {ASSET_TAGS = (); }; };
+		69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		69820B231BCB4F7800A2AFDE /* PredictionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		69820B281BCB54A700A2AFDE /* Money-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B241BCB54A700A2AFDE /* Money-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B291BCB54A700A2AFDE /* Money Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B251BCB54A700A2AFDE /* Money Filled-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B261BCB54A700A2AFDE /* Bitcoin Filled-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B2B1BCB54A700A2AFDE /* Bitcoin-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B271BCB54A700A2AFDE /* Bitcoin-100.png */; settings = {ASSET_TAGS = (); }; };
+		69820B2E1BCB553900A2AFDE /* Money Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2C1BCB553900A2AFDE /* Money Filled-50.png */; settings = {ASSET_TAGS = (); }; };
+		69820B2F1BCB553900A2AFDE /* Money-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2D1BCB553900A2AFDE /* Money-50.png */; settings = {ASSET_TAGS = (); }; };
+		69820B321BCB55D600A2AFDE /* Money Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B301BCB55D600A2AFDE /* Money Filled-32.png */; settings = {ASSET_TAGS = (); }; };
+		69820B331BCB55D600A2AFDE /* Money-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B311BCB55D600A2AFDE /* Money-32.png */; settings = {ASSET_TAGS = (); }; };
+		69820B361BCB564500A2AFDE /* Bitcoin-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B341BCB564500A2AFDE /* Bitcoin-25.png */; settings = {ASSET_TAGS = (); }; };
+		69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B351BCB564500A2AFDE /* Bitcoin Filled-25.png */; settings = {ASSET_TAGS = (); }; };
+		69820B3A1BCB567C00A2AFDE /* Bitcoin Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */; settings = {ASSET_TAGS = (); }; };
+		69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B391BCB567C00A2AFDE /* Bitcoin-32.png */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
@@ -57,6 +71,21 @@
 		69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangedownarrow 2.png"; sourceTree = "<group>"; };
 		69820B101BCB09A200A2AFDE /* uparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uparrow.png; sourceTree = "<group>"; };
 		69820B111BCB09A200A2AFDE /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
+		69820B1F1BCB4F4200A2AFDE /* PredictionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredictionTableViewCell.h; sourceTree = "<group>"; };
+		69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredictionTableViewCell.m; sourceTree = "<group>"; };
+		69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PredictionTableViewCell.xib; sourceTree = "<group>"; };
+		69820B241BCB54A700A2AFDE /* Money-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money-100.png"; sourceTree = "<group>"; };
+		69820B251BCB54A700A2AFDE /* Money Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money Filled-100.png"; sourceTree = "<group>"; };
+		69820B261BCB54A700A2AFDE /* Bitcoin Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin Filled-100.png"; sourceTree = "<group>"; };
+		69820B271BCB54A700A2AFDE /* Bitcoin-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin-100.png"; sourceTree = "<group>"; };
+		69820B2C1BCB553900A2AFDE /* Money Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money Filled-50.png"; sourceTree = "<group>"; };
+		69820B2D1BCB553900A2AFDE /* Money-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money-50.png"; sourceTree = "<group>"; };
+		69820B301BCB55D600A2AFDE /* Money Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money Filled-32.png"; sourceTree = "<group>"; };
+		69820B311BCB55D600A2AFDE /* Money-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Money-32.png"; sourceTree = "<group>"; };
+		69820B341BCB564500A2AFDE /* Bitcoin-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin-25.png"; sourceTree = "<group>"; };
+		69820B351BCB564500A2AFDE /* Bitcoin Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin Filled-25.png"; sourceTree = "<group>"; };
+		69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin Filled-32.png"; sourceTree = "<group>"; };
+		69820B391BCB567C00A2AFDE /* Bitcoin-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bitcoin-32.png"; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +121,18 @@
 		69820AE51BCAE43500A2AFDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */,
+				69820B391BCB567C00A2AFDE /* Bitcoin-32.png */,
+				69820B341BCB564500A2AFDE /* Bitcoin-25.png */,
+				69820B351BCB564500A2AFDE /* Bitcoin Filled-25.png */,
+				69820B2C1BCB553900A2AFDE /* Money Filled-50.png */,
+				69820B301BCB55D600A2AFDE /* Money Filled-32.png */,
+				69820B311BCB55D600A2AFDE /* Money-32.png */,
+				69820B2D1BCB553900A2AFDE /* Money-50.png */,
+				69820B241BCB54A700A2AFDE /* Money-100.png */,
+				69820B251BCB54A700A2AFDE /* Money Filled-100.png */,
+				69820B261BCB54A700A2AFDE /* Bitcoin Filled-100.png */,
+				69820B271BCB54A700A2AFDE /* Bitcoin-100.png */,
 				69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */,
 				69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */,
 				69820B101BCB09A200A2AFDE /* uparrow.png */,
@@ -140,10 +181,13 @@
 				69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */,
 				69F06F421BC99F1200CDC747 /* BitcoinTicker.h */,
 				69F06F431BC99F1200CDC747 /* BitcoinTicker.m */,
+				69820B1F1BCB4F4200A2AFDE /* PredictionTableViewCell.h */,
+				69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */,
 				691277E21BCABAA400946438 /* TickerViewController.h */,
 				691277E31BCABAA400946438 /* TickerViewController.m */,
 				69820AEC1BCAEC1000A2AFDE /* OptionsTableViewController.h */,
 				69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */,
+				69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */,
 				69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */,
 				69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */,
 				69820AE51BCAE43500A2AFDE /* Images */,
@@ -251,7 +295,11 @@
 			files = (
 				69D4CBAA1BC9698A00E1A7F7 /* LaunchScreen.storyboard in Resources */,
 				69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */,
+				69820B281BCB54A700A2AFDE /* Money-100.png in Resources */,
 				69820AEA1BCAE47200A2AFDE /* menu.png in Resources */,
+				69820B331BCB55D600A2AFDE /* Money-32.png in Resources */,
+				69820B2F1BCB553900A2AFDE /* Money-50.png in Resources */,
+				69820B3A1BCB567C00A2AFDE /* Bitcoin Filled-32.png in Resources */,
 				69D4CBA71BC9698A00E1A7F7 /* Assets.xcassets in Resources */,
 				69820B0D1BCB024A00A2AFDE /* down-arrow-icon.png in Resources */,
 				69820B151BCB09A200A2AFDE /* downarrow.png in Resources */,
@@ -259,13 +307,22 @@
 				69820B051BCAF55200A2AFDE /* Key-512.png in Resources */,
 				69820B121BCB09A200A2AFDE /* orangeuparrow.png in Resources */,
 				69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */,
+				69820B2B1BCB54A700A2AFDE /* Bitcoin-100.png in Resources */,
 				69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */,
+				69820B291BCB54A700A2AFDE /* Money Filled-100.png in Resources */,
 				69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */,
+				69820B361BCB564500A2AFDE /* Bitcoin-25.png in Resources */,
 				69820B081BCAF55200A2AFDE /* News-512.png in Resources */,
+				69820B2E1BCB553900A2AFDE /* Money Filled-50.png in Resources */,
+				69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */,
+				69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */,
 				69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */,
 				69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */,
+				69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */,
 				69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */,
+				69820B231BCB4F7800A2AFDE /* PredictionTableViewCell.xib in Resources */,
 				69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */,
+				69820B321BCB55D600A2AFDE /* Money Filled-32.png in Resources */,
 				69820B141BCB09A200A2AFDE /* uparrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
 				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,

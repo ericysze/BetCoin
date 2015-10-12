@@ -40,8 +40,50 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="journal" rowHeight="62" id="9mO-19-GSQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticker" rowHeight="62" id="hno-jG-Ldh">
                                 <rect key="frame" x="0.0" y="28" width="600" height="62"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hno-jG-Ldh" id="tw6-Sw-oam">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitcoin-100.png" highlightedImage="Bitcoin Filled-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="ILR-aU-uYm">
+                                            <rect key="frame" x="6" y="6" width="50" height="50"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Mqx-D8-Dzf"/>
+                                                <constraint firstAttribute="width" secondItem="ILR-aU-uYm" secondAttribute="height" multiplier="1:1" id="fEl-eD-Jkx"/>
+                                                <constraint firstAttribute="width" secondItem="ILR-aU-uYm" secondAttribute="height" multiplier="59:62" id="oOX-1S-ebZ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="oOX-1S-ebZ"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6h-9K-tYQ">
+                                            <rect key="frame" x="76" y="20.5" width="47.5" height="20.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="ILR-aU-uYm" firstAttribute="centerY" secondItem="tw6-Sw-oam" secondAttribute="centerY" id="Mtv-x6-lzP"/>
+                                        <constraint firstItem="ILR-aU-uYm" firstAttribute="leading" secondItem="tw6-Sw-oam" secondAttribute="leading" constant="6" id="Xjw-qO-Yml"/>
+                                        <constraint firstItem="Z6h-9K-tYQ" firstAttribute="leading" secondItem="ILR-aU-uYm" secondAttribute="trailing" constant="20" id="e0y-XC-KuI"/>
+                                        <constraint firstItem="Z6h-9K-tYQ" firstAttribute="centerY" secondItem="ILR-aU-uYm" secondAttribute="centerY" id="tL9-rJ-cFN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="PhV-ta-5zB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="LHO-20-lJC"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="journal" rowHeight="62" id="9mO-19-GSQ">
+                                <rect key="frame" x="0.0" y="90" width="600" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9mO-19-GSQ" id="MxK-ka-vqN">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
@@ -78,9 +120,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="iyp-mK-0ei" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="p1v-wz-rOz"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="news" rowHeight="62" id="M7L-aR-zGa">
-                                <rect key="frame" x="0.0" y="90" width="600" height="62"/>
+                                <rect key="frame" x="0.0" y="152" width="600" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M7L-aR-zGa" id="1fA-Ba-Ctx">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
@@ -117,9 +162,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="dbo-nM-1EA" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5rR-AF-k8k"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="passcode" rowHeight="62" id="20K-ON-GxR">
-                                <rect key="frame" x="0.0" y="152" width="600" height="62"/>
+                                <rect key="frame" x="0.0" y="214" width="600" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="20K-ON-GxR" id="nzI-av-frj">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="61.5"/>
@@ -156,6 +204,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="EK7-b4-8JJ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="WI7-GS-5BJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -167,7 +218,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sal-e7-b0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="412"/>
+            <point key="canvasLocation" x="632" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yQ2-b2-MkB">
@@ -184,7 +235,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qQ-dN-5rA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-407"/>
+            <point key="canvasLocation" x="632" y="-645"/>
         </scene>
         <!--Bitcoin Ticker-->
         <scene sceneID="ZdR-P8-gnA">
@@ -411,6 +462,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PredictionIdentifier" id="RzQ-hn-krx" customClass="PredictionTableViewCell">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RzQ-hn-krx" id="RlY-19-Kwo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </tableViewCellContentView>
+                                                <animations/>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
                                 </subviews>
                                 <animations/>
@@ -437,18 +500,139 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bitcoin Ticker" id="fMX-1E-tQo">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="CQk-dr-iQg"/>
+                        <barButtonItem key="leftBarButtonItem" image="Bitcoin-32" id="CQk-dr-iQg"/>
                     </navigationItem>
                     <connections>
                         <outlet property="sidebarButton" destination="CQk-dr-iQg" id="RxR-Ie-gCx"/>
+                        <outlet property="tableView" destination="aN2-iU-OBi" id="ZGv-fV-KUo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVk-zk-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="-407"/>
+            <point key="canvasLocation" x="1354" y="-645"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ajq-bm-5MP">
+            <objects>
+                <navigationController id="iyp-mK-0ei" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vuF-ce-LDi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zcV-KE-sg3" kind="relationship" relationship="rootViewController" id="Vze-ct-CP2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpk-QR-VAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="66"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b9N-NF-baC">
+            <objects>
+                <viewController id="zcV-KE-sg3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jly-Rs-ynI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2g9-zH-n5R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fk4-A4-gJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gXE-wf-yM2">
+                        <barButtonItem key="leftBarButtonItem" title="Journal" id="Rvh-BV-lNs"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPL-rb-XRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066" y="66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="naB-kV-zkv">
+            <objects>
+                <navigationController id="dbo-nM-1EA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axj-u7-CaN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eAa-9D-JT0" kind="relationship" relationship="rootViewController" id="jY1-BU-dEl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQT-Z9-EgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="788"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sT6-5i-JgR">
+            <objects>
+                <viewController id="eAa-9D-JT0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oUM-Lj-YLd"/>
+                        <viewControllerLayoutGuide type="bottom" id="QWD-ti-FDR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7De-UK-bqd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LcZ-4L-TdQ">
+                        <barButtonItem key="leftBarButtonItem" title="News" id="fua-LH-EzJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0la-vV-acN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="788"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RBr-HT-Wxu">
+            <objects>
+                <viewController id="qLu-2t-ZoR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CEC-YC-Sch"/>
+                        <viewControllerLayoutGuide type="bottom" id="iXU-Ah-jSp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xPz-sI-cB7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qDb-fT-Bzv">
+                        <barButtonItem key="leftBarButtonItem" title="Passcode" id="IJT-Ay-8tu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-oq-PbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="1476"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2gm-ur-9Gu">
+            <objects>
+                <navigationController id="EK7-b4-8JJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GTa-lS-t5A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qLu-2t-ZoR" kind="relationship" relationship="rootViewController" id="8Xo-cU-p0s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfB-jM-B2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="1476"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Bitcoin Filled-100.png" width="100" height="100"/>
+        <image name="Bitcoin-100.png" width="100" height="100"/>
+        <image name="Bitcoin-32" width="32" height="32"/>
         <image name="Key Filled-512.png" width="512" height="512"/>
         <image name="Key-512.png" width="512" height="512"/>
         <image name="Literature Filled-100.png" width="100" height="100"/>
@@ -456,7 +640,9 @@
         <image name="News Filled-512.png" width="512" height="512"/>
         <image name="News-512.png" width="512" height="512"/>
         <image name="downarrow" width="512" height="512"/>
-        <image name="menu" width="28" height="20"/>
         <image name="uparrow" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LHO-20-lJC"/>
+    </inferredMetricsTieBreakers>
 </document>

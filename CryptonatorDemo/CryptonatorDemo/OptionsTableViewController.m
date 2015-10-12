@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.menuItems = @[@"journal",@"news",@"passcode"];
+    self.menuItems = @[@"ticker",@"journal",@"news",@"passcode"];
 }
 
 #pragma mark - Table view data source
