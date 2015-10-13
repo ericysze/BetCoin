@@ -1,5 +1,5 @@
 //
-//  PasscodeViewController.h
+//  PasscodeResetViewController.h
 //  CryptonatorDemo
 //
 //  Created by Z on 10/13/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PasscodeViewController : UIViewController
+@interface PasscodeResetViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

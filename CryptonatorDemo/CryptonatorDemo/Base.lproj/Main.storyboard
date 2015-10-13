@@ -10,7 +10,6 @@
         <!--Navigation Controller-->
         <scene sceneID="W1d-qk-KbC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x1o-G0-sn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="SwB-1l-GtW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqh-EC-NxY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -21,6 +20,7 @@
                         <segue destination="6Ga-De-amD" kind="relationship" relationship="rootViewController" id="RLB-cg-nw1"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1o-G0-sn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1737" y="72"/>
         </scene>
@@ -630,10 +630,10 @@
             </objects>
             <point key="canvasLocation" x="2072" y="788"/>
         </scene>
-        <!--Passcode View Controller-->
+        <!--Passcode Reset View Controller-->
         <scene sceneID="RBr-HT-Wxu">
             <objects>
-                <viewController id="qLu-2t-ZoR" customClass="PasscodeViewController" sceneMemberID="viewController">
+                <viewController id="qLu-2t-ZoR" customClass="PasscodeResetViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CEC-YC-Sch"/>
                         <viewControllerLayoutGuide type="bottom" id="iXU-Ah-jSp"/>
@@ -642,20 +642,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px2-07-xEe">
-                                <rect key="frame" x="277" y="182" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px2-07-xEe">
+                                <rect key="frame" x="244.5" y="283.5" width="111" height="33"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Reset Passcode"/>
+                                <connections>
+                                    <action selector="resetPasscodeButtonTouched:" destination="qLu-2t-ZoR" eventType="touchUpInside" id="hE5-d5-vaJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Px2-07-xEe" firstAttribute="centerX" secondItem="xPz-sI-cB7" secondAttribute="centerX" id="QE4-zR-mVI"/>
+                            <constraint firstItem="Px2-07-xEe" firstAttribute="centerY" secondItem="xPz-sI-cB7" secondAttribute="centerY" id="Scw-pM-z6g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-fT-Bzv">
                         <barButtonItem key="leftBarButtonItem" image="Key-32" id="IJT-Ay-8tu"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="sidebarButton" destination="IJT-Ay-8tu" id="G33-c0-N0l"/>
+                        <outlet property="sidebarButton" destination="IJT-Ay-8tu" id="SRv-O3-qf9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-oq-PbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -677,7 +685,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfB-jM-B2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="1476"/>
+            <point key="canvasLocation" x="1288" y="1476"/>
         </scene>
     </scenes>
     <resources>

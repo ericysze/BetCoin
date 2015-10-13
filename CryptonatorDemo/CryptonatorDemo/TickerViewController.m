@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
     
     //get latest BTC price from Cryptonator API every 30 seconds
