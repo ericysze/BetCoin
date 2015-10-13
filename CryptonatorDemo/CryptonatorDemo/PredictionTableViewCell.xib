@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="599" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days 3 hours 45 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x3-h2-j2P">
-                                        <rect key="frame" x="96" y="18.5" width="200.5" height="23.5"/>
+                                        <rect key="frame" x="91" y="18.5" width="200.5" height="23.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,14 +67,14 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCB-Mr-o2e" userLabel="arrow view">
-                                <rect key="frame" x="0.0" y="0.0" width="88" height="125"/>
+                                <rect key="frame" x="0.0" y="0.0" width="83" height="125"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orangeuparrow" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-An-Z91">
-                                        <rect key="frame" x="8" y="22" width="80" height="80"/>
+                                        <rect key="frame" x="8" y="24.5" width="75" height="75"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="V5b-An-Z91" secondAttribute="height" multiplier="1:1" id="6Xk-a3-pPg"/>
-                                            <constraint firstAttribute="width" constant="80" id="Hpx-bB-XDw"/>
+                                            <constraint firstAttribute="width" constant="75" id="Hpx-bB-XDw"/>
                                             <constraint firstAttribute="width" secondItem="V5b-An-Z91" secondAttribute="height" multiplier="37:32" id="eyR-Pu-Kyb"/>
                                         </constraints>
                                         <variation key="default">
@@ -84,7 +84,7 @@
                                         </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEA-pW-GRT">
-                                        <rect key="frame" x="96" y="65.5" width="40.5" height="23.5"/>
+                                        <rect key="frame" x="91" y="65.5" width="40.5" height="23.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

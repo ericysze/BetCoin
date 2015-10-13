@@ -590,10 +590,10 @@
             </objects>
             <point key="canvasLocation" x="2072" y="788"/>
         </scene>
-        <!--View Controller-->
+        <!--Passcode View Controller-->
         <scene sceneID="RBr-HT-Wxu">
             <objects>
-                <viewController id="qLu-2t-ZoR" sceneMemberID="viewController">
+                <viewController id="qLu-2t-ZoR" customClass="PasscodeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CEC-YC-Sch"/>
                         <viewControllerLayoutGuide type="bottom" id="iXU-Ah-jSp"/>
@@ -605,8 +605,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qDb-fT-Bzv">
-                        <barButtonItem key="leftBarButtonItem" title="Passcode" id="IJT-Ay-8tu"/>
+                        <barButtonItem key="leftBarButtonItem" image="Key-32" id="IJT-Ay-8tu"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sidebarButton" destination="IJT-Ay-8tu" id="G33-c0-N0l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7o-oq-PbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -635,6 +638,7 @@
         <image name="Bitcoin-100.png" width="100" height="100"/>
         <image name="Bitcoin-32" width="32" height="32"/>
         <image name="Key Filled-512.png" width="512" height="512"/>
+        <image name="Key-32" width="32" height="32"/>
         <image name="Key-512.png" width="512" height="512"/>
         <image name="Literature Filled-100.png" width="100" height="100"/>
         <image name="Literature-100" width="100" height="100"/>

@@ -41,6 +41,9 @@
 		69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B391BCB567C00A2AFDE /* Bitcoin-32.png */; settings = {ASSET_TAGS = (); }; };
 		69820B3E1BCB6DCF00A2AFDE /* BitcoinPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */; settings = {ASSET_TAGS = (); }; };
 		69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */; settings = {ASSET_TAGS = (); }; };
+		69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B431BCCBB4000A2AFDE /* Key-32.png */; settings = {ASSET_TAGS = (); }; };
+		69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B441BCCBB4000A2AFDE /* Key Filled-32.png */; settings = {ASSET_TAGS = (); }; };
+		69820B491BCCBB9D00A2AFDE /* PasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B481BCCBB9D00A2AFDE /* PasscodeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
@@ -92,6 +95,10 @@
 		69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BitcoinPrediction.m; path = ../BitcoinPrediction.m; sourceTree = "<group>"; };
 		69820B401BCB70AA00A2AFDE /* PlayerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDataModel.h; sourceTree = "<group>"; };
 		69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDataModel.m; sourceTree = "<group>"; };
+		69820B431BCCBB4000A2AFDE /* Key-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key-32.png"; sourceTree = "<group>"; };
+		69820B441BCCBB4000A2AFDE /* Key Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key Filled-32.png"; sourceTree = "<group>"; };
+		69820B471BCCBB9D00A2AFDE /* PasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeViewController.h; sourceTree = "<group>"; };
+		69820B481BCCBB9D00A2AFDE /* PasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeViewController.m; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +134,8 @@
 		69820AE51BCAE43500A2AFDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				69820B431BCCBB4000A2AFDE /* Key-32.png */,
+				69820B441BCCBB4000A2AFDE /* Key Filled-32.png */,
 				69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */,
 				69820B391BCB567C00A2AFDE /* Bitcoin-32.png */,
 				69820B341BCB564500A2AFDE /* Bitcoin-25.png */,
@@ -204,6 +213,8 @@
 				69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */,
 				691277E21BCABAA400946438 /* TickerViewController.h */,
 				691277E31BCABAA400946438 /* TickerViewController.m */,
+				69820B471BCCBB9D00A2AFDE /* PasscodeViewController.h */,
+				69820B481BCCBB9D00A2AFDE /* PasscodeViewController.m */,
 				69820AEC1BCAEC1000A2AFDE /* OptionsTableViewController.h */,
 				69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */,
 				69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */,
@@ -336,6 +347,8 @@
 				69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */,
 				69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */,
 				69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */,
+				69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */,
+				69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */,
 				69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */,
 				69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */,
 				69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */,
@@ -392,6 +405,7 @@
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
 				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,
+				69820B491BCCBB9D00A2AFDE /* PasscodeViewController.m in Sources */,
 				69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */,
 				691277E41BCABAA400946438 /* TickerViewController.m in Sources */,
 				69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */,
