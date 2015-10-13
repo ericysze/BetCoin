@@ -67,8 +67,6 @@
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(PredictionTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    cell.leftLabel.text = @"pooop";
-    NSLog(@"%@",cell.leftLabel.text);
 }
 
 
