@@ -37,8 +37,12 @@
 
 @implementation ABPadButton
 
+
+//[[ABPadButton appearance] setImage:[UIImage imageNamed:@"Bitcoin Filled-32.png"] forState:UIControlStateNormal];
+
 #pragma mark -
 #pragma mark - Init Methods
+
 - (instancetype)initWithFrame:(CGRect)frame number:(NSInteger)number letters:(NSString *)letters
 {
     self = [super initWithFrame:frame];
@@ -107,6 +111,7 @@
 	
     _numberLabelFont = [UIFont fontWithName:fontName size:35];
     _letterLabelFont = [UIFont fontWithName:@"HelveticaNeue" size:10];
+    
 }
 
 - (void)prepareApperance

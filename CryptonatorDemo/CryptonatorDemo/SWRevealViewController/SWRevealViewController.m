@@ -28,7 +28,6 @@
 
 #import "SWRevealViewController.h"
 
-
 #pragma mark - StatusBar Helper Function
 
 // computes the required offset adjustment due to the status bar for the passed in view,
@@ -62,7 +61,7 @@ static CGFloat statusBarAdjustment( UIView* view )
 @end
 
 
-@interface SWRevealViewController()
+@interface SWRevealViewController() 
 - (void)_getRevealWidth:(CGFloat*)pRevealWidth revealOverDraw:(CGFloat*)pRevealOverdraw forSymetry:(int)symetry;
 - (void)_getBounceBack:(BOOL*)pBounceBack pStableDrag:(BOOL*)pStableDrag forSymetry:(int)symetry;
 - (void)_getAdjustedFrontViewPosition:(FrontViewPosition*)frontViewPosition forSymetry:(int)symetry;

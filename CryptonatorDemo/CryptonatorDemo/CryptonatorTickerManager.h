@@ -15,6 +15,5 @@
 
 + (id)sharedManager;
 -(void)getBitcoinTickerUpdateWithCallbackBlock:(void(^)())block;
--(double)getCurrentBitcoinPrice;
 
 @end
