@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SwB-1l-GtW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1o-G0-sn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2209" y="66"/>
+            <point key="canvasLocation" x="-1625" y="79"/>
         </scene>
         <!--Initial Lockscreen View Controller-->
         <scene sceneID="5Fz-Qy-UbR">
@@ -39,30 +39,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="hyU-dy-q7P"/>
-                    <connections>
-                        <segue destination="eJ5-Yh-7PT" kind="show" identifier="RevealSegueIdentifier" id="YPa-bD-UDA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJm-xS-LeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1519" y="74"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6RK-fy-Sku">
-            <objects>
-                <navigationController id="eJ5-Yh-7PT" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ymr-c6-61g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QIB-ZX-poW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MN6-S2-ZKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-855" y="74"/>
+            <point key="canvasLocation" x="-1037" y="79"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -593,10 +573,10 @@
             </objects>
             <point key="canvasLocation" x="1288" y="66"/>
         </scene>
-        <!--View Controller-->
+        <!--Journal View Controller-->
         <scene sceneID="b9N-NF-baC">
             <objects>
-                <viewController id="zcV-KE-sg3" sceneMemberID="viewController">
+                <viewController id="zcV-KE-sg3" customClass="JournalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jly-Rs-ynI"/>
                         <viewControllerLayoutGuide type="bottom" id="2g9-zH-n5R"/>
@@ -608,8 +588,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gXE-wf-yM2">
-                        <barButtonItem key="leftBarButtonItem" title="Journal" id="Rvh-BV-lNs"/>
+                        <barButtonItem key="leftBarButtonItem" image="Literature-32" id="Rvh-BV-lNs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sidebarButton" destination="Rvh-BV-lNs" id="8d5-ma-2lL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPL-rb-XRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -632,10 +615,10 @@
             </objects>
             <point key="canvasLocation" x="1288" y="788"/>
         </scene>
-        <!--View Controller-->
+        <!--News View Controller-->
         <scene sceneID="sT6-5i-JgR">
             <objects>
-                <viewController id="eAa-9D-JT0" sceneMemberID="viewController">
+                <viewController id="eAa-9D-JT0" customClass="NewsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oUM-Lj-YLd"/>
                         <viewControllerLayoutGuide type="bottom" id="QWD-ti-FDR"/>
@@ -647,8 +630,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LcZ-4L-TdQ">
-                        <barButtonItem key="leftBarButtonItem" title="News" id="fua-LH-EzJ"/>
+                        <barButtonItem key="leftBarButtonItem" image="News-32" id="fua-LH-EzJ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sidebarButton" destination="fua-LH-EzJ" id="97b-th-Pi7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0la-vV-acN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -721,7 +707,9 @@
         <image name="Key-512.png" width="512" height="512"/>
         <image name="Literature Filled-100.png" width="100" height="100"/>
         <image name="Literature-100" width="100" height="100"/>
+        <image name="Literature-32" width="32" height="32"/>
         <image name="News Filled-512.png" width="512" height="512"/>
+        <image name="News-32" width="32" height="32"/>
         <image name="News-512.png" width="512" height="512"/>
         <image name="downarrow" width="512" height="512"/>
         <image name="uparrow" width="512" height="512"/>

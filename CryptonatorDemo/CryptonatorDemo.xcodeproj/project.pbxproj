@@ -45,6 +45,10 @@
 		69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B431BCCBB4000A2AFDE /* Key-32.png */; settings = {ASSET_TAGS = (); }; };
 		69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B441BCCBB4000A2AFDE /* Key Filled-32.png */; settings = {ASSET_TAGS = (); }; };
 		69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69CE53CE1BCDE9520078C136 /* Literature-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CC1BCDE9520078C136 /* Literature-32.png */; settings = {ASSET_TAGS = (); }; };
+		69CE53CF1BCDE9520078C136 /* News-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CD1BCDE9520078C136 /* News-32.png */; settings = {ASSET_TAGS = (); }; };
+		69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D11BCDE9C90078C136 /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D41BCDEA0F0078C136 /* JournalViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
@@ -102,6 +106,12 @@
 		69820B441BCCBB4000A2AFDE /* Key Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Key Filled-32.png"; sourceTree = "<group>"; };
 		69CE53C71BCDCC060078C136 /* PasscodeResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasscodeResetViewController.h; path = ../PasscodeResetViewController.h; sourceTree = "<group>"; };
 		69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasscodeResetViewController.m; path = ../PasscodeResetViewController.m; sourceTree = "<group>"; };
+		69CE53CC1BCDE9520078C136 /* Literature-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Literature-32.png"; sourceTree = "<group>"; };
+		69CE53CD1BCDE9520078C136 /* News-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-32.png"; sourceTree = "<group>"; };
+		69CE53D01BCDE9C90078C136 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		69CE53D11BCDE9C90078C136 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		69CE53D31BCDEA0F0078C136 /* JournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalViewController.h; sourceTree = "<group>"; };
+		69CE53D41BCDEA0F0078C136 /* JournalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalViewController.m; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +147,8 @@
 		69820AE51BCAE43500A2AFDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				69CE53CC1BCDE9520078C136 /* Literature-32.png */,
+				69CE53CD1BCDE9520078C136 /* News-32.png */,
 				69820B431BCCBB4000A2AFDE /* Key-32.png */,
 				69820B441BCCBB4000A2AFDE /* Key Filled-32.png */,
 				69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */,
@@ -199,6 +211,7 @@
 		69CE53CB1BCDD1B60078C136 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				69F06F4A1BC9B96400CDC747 /* SWRevealViewController */,
 				69F06F451BC9A40B00CDC747 /* CryptonatorTickerManager.h */,
 				69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */,
 				692C92201BCCCD7500A14B2A /* InitialLockscreenViewController.h */,
@@ -207,6 +220,10 @@
 				69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */,
 				691277E21BCABAA400946438 /* TickerViewController.h */,
 				691277E31BCABAA400946438 /* TickerViewController.m */,
+				69CE53D01BCDE9C90078C136 /* NewsViewController.h */,
+				69CE53D11BCDE9C90078C136 /* NewsViewController.m */,
+				69CE53D31BCDEA0F0078C136 /* JournalViewController.h */,
+				69CE53D41BCDEA0F0078C136 /* JournalViewController.m */,
 				69CE53C71BCDCC060078C136 /* PasscodeResetViewController.h */,
 				69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */,
 			);
@@ -235,7 +252,6 @@
 		69D4CB991BC9698A00E1A7F7 /* CryptonatorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				69F06F4A1BC9B96400CDC747 /* SWRevealViewController */,
 				69820B3F1BCB6DF500A2AFDE /* Model */,
 				69CE53CA1BCDCC0F0078C136 /* View */,
 				69CE53CB1BCDD1B60078C136 /* Controller */,
@@ -265,7 +281,7 @@
 				69F06F4B1BC9B96400CDC747 /* SWRevealViewController.h */,
 				69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */,
 			);
-			path = SWRevealViewController;
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		9DCAF3DEFF4EADD7859357E4 /* Pods */ = {
@@ -362,6 +378,7 @@
 				69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */,
 				69820B2B1BCB54A700A2AFDE /* Bitcoin-100.png in Resources */,
 				69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */,
+				69CE53CF1BCDE9520078C136 /* News-32.png in Resources */,
 				69820B291BCB54A700A2AFDE /* Money Filled-100.png in Resources */,
 				69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */,
 				69820B361BCB564500A2AFDE /* Bitcoin-25.png in Resources */,
@@ -371,6 +388,7 @@
 				69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */,
 				69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */,
 				69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */,
+				69CE53CE1BCDE9520078C136 /* Literature-32.png in Resources */,
 				69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */,
 				69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */,
 				69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */,
@@ -422,12 +440,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */,
 				69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */,
 				69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */,
 				69820B3E1BCB6DCF00A2AFDE /* BitcoinPrediction.m in Sources */,
 				692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */,
 				69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
+				69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
 				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,
 				69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */,

@@ -15,8 +15,6 @@
 <ABPadLockScreenSetupViewControllerDelegate,
 ABPadLockScreenViewControllerDelegate>
 
-@property (nonatomic) BOOL passcodeViewControllerHasBeenShown;
-
 @end
 
 @implementation PasscodeResetViewController
