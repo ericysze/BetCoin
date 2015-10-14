@@ -10,7 +10,9 @@
 #import "SWRevealViewController.h"
 #import "CryptonatorTickerManager.h"
 #import "PredictionTableViewCell.h"
+
 #import <POP/POP.h>
+#import "JournalEntryViewController.h"
 
 #import <ABPadLockScreen/ABPadLockScreenSetupViewController.h>
 #import <ABPadLockScreen/ABPadLockScreenViewController.h>
@@ -25,7 +27,7 @@ ABPadLockScreenViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *tickerPriceLabel;
 @end
 
-//static variable persists through app
+//static variable persists on class
 static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 
 @implementation TickerViewController
@@ -96,23 +98,30 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 -(void)tableView:(UITableView *)tableView willDisplayCell:(PredictionTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
-#pragma mark - button methods
-
-- (IBAction)arrowButtonTouched:(UIButton *)sender {
+#pragma mark - pop button methods
+- (IBAction)upArrowButtonTouched:(UIButton *)sender {
+    [sender setImage:[UIImage imageNamed:@"orangeuparrow"] forState:UIControlStateNormal];
     [self addPopAnimationToButton:sender];
 }
+- (IBAction)downArrowButtonTouched:(UIButton *)sender {
+    [sender setImage:[UIImage imageNamed:@"orangedownarrow"] forState:UIControlStateNormal];
+    [self addPopAnimationToButton:sender];
+}
+
 
 -(void)addPopAnimationToButton:(UIButton*)button{
     POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.5, 1.5)];
-    scaleAnimation.springBounciness = 20.f;
+    scaleAnimation.springBounciness = 25.f;
+    scaleAnimation.springSpeed = 80;
+    scaleAnimation.completionBlock = ^(POPAnimation *anim, BOOL finished){
+        [self presentJournalEntryViewController];
+    };
+    scaleAnimation.removedOnCompletion = YES;
     [button.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
 }
--(void)removePopAnimationToButton:(UIButton*)button{
-    [button.layer pop_removeAnimationForKey:@"scaleAnim"];
-}
 
-#pragma mark - ABPadLockScreen present methods
+#pragma mark - present methods
 -(void)presentABPadLockScreenSetupViewController{
     ABPadLockScreenSetupViewController *lockScreen = [[ABPadLockScreenSetupViewController alloc] initWithDelegate:self complexPin:NO subtitleLabelText:@"Please set your pin"];
     
@@ -130,6 +139,10 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     lockScreen.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [self presentViewController:lockScreen animated:YES completion:nil];
+}
+
+-(void)presentJournalEntryViewController{
+    [self performSegueWithIdentifier:@"JournalEntryViewControllerSegueIdentifier" sender:self];
 }
 
 #pragma mark - push view controller methods

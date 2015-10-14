@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJm-xS-LeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1037" y="79"/>
+            <point key="canvasLocation" x="-911" y="79"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -325,7 +325,7 @@
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="arrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="gC4-ih-63U"/>
+                                                            <action selector="upArrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="J88-T9-LUx"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -356,7 +356,7 @@
                                                             </mask>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="arrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="uhu-1L-bN2"/>
+                                                            <action selector="downArrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="QdX-ez-c2m"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -550,11 +550,12 @@
                         <outlet property="sidebarButton" destination="CQk-dr-iQg" id="RxR-Ie-gCx"/>
                         <outlet property="tableView" destination="aN2-iU-OBi" id="ZGv-fV-KUo"/>
                         <outlet property="tickerPriceLabel" destination="991-Zy-ZwK" id="5bj-Lc-1dU"/>
+                        <segue destination="He3-dz-14p" kind="presentation" identifier="JournalEntryViewControllerSegueIdentifier" id="OZa-yN-Qmf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVk-zk-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="-645"/>
+            <point key="canvasLocation" x="1280" y="-695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ajq-bm-5MP">
@@ -572,6 +573,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpk-QR-VAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1288" y="66"/>
+        </scene>
+        <!--Journal Entry View Controller-->
+        <scene sceneID="xSX-kD-wvP">
+            <objects>
+                <viewController id="He3-dz-14p" customClass="JournalEntryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Wr-Kq-GhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="OeJ-PJ-Du4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fDr-Rf-sUD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW1-n9-FoG">
+                                <rect key="frame" x="280" y="290" width="40" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YW1-n9-FoG" firstAttribute="centerX" secondItem="fDr-Rf-sUD" secondAttribute="centerX" id="Bcj-8F-92O"/>
+                            <constraint firstItem="YW1-n9-FoG" firstAttribute="centerY" secondItem="fDr-Rf-sUD" secondAttribute="centerY" id="Qef-tb-kYd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnA-Yh-kks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="-695"/>
         </scene>
         <!--Journal View Controller-->
         <scene sceneID="b9N-NF-baC">

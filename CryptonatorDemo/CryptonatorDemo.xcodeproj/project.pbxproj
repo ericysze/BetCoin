@@ -49,6 +49,7 @@
 		69CE53CF1BCDE9520078C136 /* News-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CD1BCDE9520078C136 /* News-32.png */; settings = {ASSET_TAGS = (); }; };
 		69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D11BCDE9C90078C136 /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D41BCDEA0F0078C136 /* JournalViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D71BCE03360078C136 /* JournalEntryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
@@ -112,6 +113,8 @@
 		69CE53D11BCDE9C90078C136 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		69CE53D31BCDEA0F0078C136 /* JournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalViewController.h; sourceTree = "<group>"; };
 		69CE53D41BCDEA0F0078C136 /* JournalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalViewController.m; sourceTree = "<group>"; };
+		69CE53D61BCE03360078C136 /* JournalEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalEntryViewController.h; sourceTree = "<group>"; };
+		69CE53D71BCE03360078C136 /* JournalEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalEntryViewController.m; sourceTree = "<group>"; };
 		69D4CB971BC9698A00E1A7F7 /* CryptonatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptonatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4CB9B1BC9698A00E1A7F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 				69CE53D11BCDE9C90078C136 /* NewsViewController.m */,
 				69CE53D31BCDEA0F0078C136 /* JournalViewController.h */,
 				69CE53D41BCDEA0F0078C136 /* JournalViewController.m */,
+				69CE53D61BCE03360078C136 /* JournalEntryViewController.h */,
+				69CE53D71BCE03360078C136 /* JournalEntryViewController.m */,
 				69CE53C71BCDCC060078C136 /* PasscodeResetViewController.h */,
 				69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */,
 			);
@@ -447,6 +452,7 @@
 				692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */,
 				69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
+				69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */,
 				69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
 				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,
