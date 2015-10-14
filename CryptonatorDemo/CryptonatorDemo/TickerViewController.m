@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "CryptonatorTickerManager.h"
 #import "PredictionTableViewCell.h"
+#import <POP/POP.h>
 
 @interface TickerViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -68,5 +69,20 @@
 -(void)tableView:(UITableView *)tableView willDisplayCell:(PredictionTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
+#pragma mark - button methods
+
+- (IBAction)arrowButtonTouched:(UIButton *)sender {
+    [self addPopAnimationToButton:sender];
+}
+
+-(void)addPopAnimationToButton:(UIButton*)button{
+    POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    scaleAnimation.toValue = [NSValue valueWithCGSize:CGSizeMake(1.5, 1.5)];
+    scaleAnimation.springBounciness = 10.f;
+    [button.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
+}
+-(void)removePopAnimationToButton:(UIButton*)button{
+    [button.layer pop_removeAnimationForKey:@"scaleAnim"];
+}
 
 @end

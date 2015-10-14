@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1o-G0-sn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1737" y="72"/>
+            <point key="canvasLocation" x="-2209" y="66"/>
         </scene>
         <!--Initial Lockscreen View Controller-->
         <scene sceneID="5Fz-Qy-UbR">
@@ -40,12 +40,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="hyU-dy-q7P"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="RevealSegueIdentifier" id="hoz-sS-cqM"/>
+                        <segue destination="eJ5-Yh-7PT" kind="show" identifier="RevealSegueIdentifier" id="YPa-bD-UDA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJm-xS-LeL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-963" y="79"/>
+            <point key="canvasLocation" x="-1503" y="66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6RK-fy-Sku">
+            <objects>
+                <navigationController id="eJ5-Yh-7PT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ymr-c6-61g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QIB-ZX-poW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN6-S2-ZKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="74"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -61,6 +78,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c5n-Zo-Xr3"/>
                     <connections>
                         <segue destination="PhV-ta-5zB" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="FHA-lr-c3y"/>
                         <segue destination="t0w-VN-2Zx" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="hfr-mb-Mfn"/>
@@ -280,7 +298,7 @@
         <!--Bitcoin Ticker-->
         <scene sceneID="ZdR-P8-gnA">
             <objects>
-                <viewController id="7d2-kP-gjZ" customClass="TickerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TickerViewControllerIdentifier" id="7d2-kP-gjZ" customClass="TickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LzA-tT-u8r"/>
                         <viewControllerLayoutGuide type="bottom" id="1QJ-aF-5td"/>
@@ -326,6 +344,9 @@
                                                         <state key="normal" image="uparrow">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="arrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="gC4-ih-63U"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <animations/>
@@ -354,6 +375,9 @@
                                                                 <exclude reference="ZoG-Zd-6rJ"/>
                                                             </mask>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="arrowButtonTouched:" destination="7d2-kP-gjZ" eventType="touchUpInside" id="uhu-1L-bN2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <animations/>
@@ -550,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVk-zk-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1354" y="-645"/>
+            <point key="canvasLocation" x="1288" y="-645"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ajq-bm-5MP">
@@ -567,7 +591,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpk-QR-VAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="66"/>
+            <point key="canvasLocation" x="1288" y="66"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="b9N-NF-baC">
@@ -606,7 +630,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQT-Z9-EgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="788"/>
+            <point key="canvasLocation" x="1288" y="788"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sT6-5i-JgR">

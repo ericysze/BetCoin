@@ -21,13 +21,16 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - pop (1.0.8)
 
 DEPENDENCIES:
   - ABPadLockScreen (~> 3.3.0)
   - AFNetworking (~> 2.0)
+  - pop (~> 1.0)
 
 SPEC CHECKSUMS:
   ABPadLockScreen: 7172ae3562258008eb920f5085c23446958c1b39
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
 
 COCOAPODS: 0.38.2

@@ -10,6 +10,7 @@
 #import <ABPadLockScreen/ABPadLockScreenSetupViewController.h>
 #import <ABPadLockScreen/ABPadLockScreenViewController.h>
 #import "SWRevealViewController.h"
+#import "TickerViewController.h"
 
 @interface InitialLockscreenViewController ()
 <ABPadLockScreenSetupViewControllerDelegate,
@@ -39,6 +40,7 @@ ABPadLockScreenViewControllerDelegate>
     self.passcodeViewControllerHasBeenShown = YES;
 }
 
+#pragma mark - ABPadLockScreen present methods
 -(void)presentABPadLockScreenSetupViewController{
     ABPadLockScreenSetupViewController *lockScreen = [[ABPadLockScreenSetupViewController alloc] initWithDelegate:self complexPin:NO subtitleLabelText:@"Please set your pin"];
     
@@ -58,11 +60,18 @@ ABPadLockScreenViewControllerDelegate>
     [self presentViewController:lockScreen animated:YES completion:nil];
 }
 
+#pragma mark - push view controller methods
+
 -(void)pushRevealViewController{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     SWRevealViewController *revealViewController = [storyboard instantiateViewControllerWithIdentifier:@"RevealViewControllerIdentifier"];
     [self.navigationController pushViewController:revealViewController animated:YES];
-    
+}
+
+-(void)pushTickerViewController{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    TickerViewController *tickerViewController = [storyboard instantiateViewControllerWithIdentifier:@"TickerViewControllerIdentifier"];
+    [self.navigationController pushViewController:tickerViewController animated:YES];
 }
 
 #pragma mark - ABPadLockScreenSetupViewControllerDelegate methods
@@ -71,7 +80,7 @@ ABPadLockScreenViewControllerDelegate>
     [[NSUserDefaults standardUserDefaults] setObject:pin forKey:@"pin"];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    [self pushRevealViewController];
+    [self pushTickerViewController];
 }
 
 #pragma mark - ABPadLockScreenViewControllerDelegate methods
