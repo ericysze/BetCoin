@@ -10,12 +10,13 @@
 #import "SWRevealViewController.h"
 #import "CryptonatorTickerManager.h"
 #import "PredictionTableViewCell.h"
-
-#import <POP/POP.h>
 #import "JournalEntryViewController.h"
 
 #import <ABPadLockScreen/ABPadLockScreenSetupViewController.h>
 #import <ABPadLockScreen/ABPadLockScreenViewController.h>
+
+#import <POP/POP.h>
+#import <Parse/Parse.h>
 
 @interface TickerViewController ()
 <UITableViewDataSource,
@@ -57,6 +58,10 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     
     //Register Nib for Cell Reuse Identifier
     [self.tableView registerNib:[UINib nibWithNibName:@"PredictionTableViewCell" bundle:nil] forCellReuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -187,6 +192,11 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 
 - (void)unlockWasCancelledForPadLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController{
     
+}
+
+#pragma storyboard
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"preparing for segure");
 }
 
 

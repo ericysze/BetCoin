@@ -550,7 +550,7 @@
                         <outlet property="sidebarButton" destination="CQk-dr-iQg" id="RxR-Ie-gCx"/>
                         <outlet property="tableView" destination="aN2-iU-OBi" id="ZGv-fV-KUo"/>
                         <outlet property="tickerPriceLabel" destination="991-Zy-ZwK" id="5bj-Lc-1dU"/>
-                        <segue destination="He3-dz-14p" kind="presentation" identifier="JournalEntryViewControllerSegueIdentifier" id="OZa-yN-Qmf"/>
+                        <segue destination="He3-dz-14p" kind="presentation" identifier="JournalEntryViewControllerSegueIdentifier" id="M89-EI-ngJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVk-zk-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,16 +10,23 @@
 
 @interface BitcoinPrediction : NSObject
 
-typedef NS_ENUM(NSInteger, Prediction) {
-    HighPrediction,
-    LowPrediction,
+typedef NS_ENUM(NSInteger, PredictionType) {
+    BTCHighPrediction,
+    BTCLowPrediction,
+};
+
+typedef NS_ENUM(NSInteger, PredictionOutcome) {
+    BTCCorrect,
+    BTCIncorrect,
+    BTCUndecided
 };
 
 @property (nonatomic) double priceAtInstantOfPrediction;
-@property (nonatomic) Prediction PredictionType;
-
+@property (nonatomic) PredictionType type;
 @property (nonatomic) NSDate *targetDate;
-@property (nonatomic) NSTimeInterval *timeToTargetDate;
+@property (nonatomic) NSString *journalEntry;
+
+-(PredictionOutcome)outcome:(double)targetPrice;
 
 @end
 

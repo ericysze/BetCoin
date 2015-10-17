@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2219AC37CE886DFBCB980 /* libPods.a */; };
+		6902BC141BD07DF5007C2876 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BC131BD07DF5007C2876 /* libz.1.dylib */; };
+		6902BC161BD07E11007C2876 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BC151BD07E11007C2876 /* libsqlite3.dylib */; };
 		691277E41BCABAA400946438 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691277E31BCABAA400946438 /* TickerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C92211BCCCD7500A14B2A /* InitialLockscreenViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; settings = {ASSET_TAGS = (); }; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6902BC131BD07DF5007C2876 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		6902BC151BD07E11007C2876 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		691277E21BCABAA400946438 /* TickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TickerViewController.h; path = ../TickerViewController.h; sourceTree = "<group>"; };
 		691277E31BCABAA400946438 /* TickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TickerViewController.m; path = ../TickerViewController.m; sourceTree = "<group>"; };
 		692C92201BCCCD7500A14B2A /* InitialLockscreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialLockscreenViewController.h; path = ../InitialLockscreenViewController.h; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6902BC161BD07E11007C2876 /* libsqlite3.dylib in Frameworks */,
+				6902BC141BD07DF5007C2876 /* libz.1.dylib in Frameworks */,
 				69F06F491BC9B22500CDC747 /* CoreGraphics.framework in Frameworks */,
 				0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */,
 			);
@@ -189,10 +195,10 @@
 		69820B3F1BCB6DF500A2AFDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				69820B3C1BCB6DCF00A2AFDE /* BitcoinPrediction.h */,
-				69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */,
 				69F06F421BC99F1200CDC747 /* BitcoinTicker.h */,
 				69F06F431BC99F1200CDC747 /* BitcoinTicker.m */,
+				69820B3C1BCB6DCF00A2AFDE /* BitcoinPrediction.h */,
+				69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */,
 				69820B401BCB70AA00A2AFDE /* PlayerDataModel.h */,
 				69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */,
 			);
@@ -301,6 +307,8 @@
 		A18749843D6712FBBA42E357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6902BC151BD07E11007C2876 /* libsqlite3.dylib */,
+				6902BC131BD07DF5007C2876 /* libz.1.dylib */,
 				69F06F481BC9B22500CDC747 /* CoreGraphics.framework */,
 				C8C2219AC37CE886DFBCB980 /* libPods.a */,
 			);

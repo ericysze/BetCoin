@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "BitcoinPrediction.h"
+#import <Parse/Parse.h>
 
-@interface PlayerDataModel : NSObject
+@interface PlayerDataModel : PFObject
 
-@property (nonatomic) NSInteger *wins;
-@property (nonatomic) NSInteger *losses;
+@property (nonatomic) NSInteger wins;
+@property (nonatomic) NSInteger losses;
 @property (nonatomic) NSArray *predictions;
 
 @end
