@@ -725,17 +725,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px2-07-xEe">
-                                <rect key="frame" x="244.5" y="283.5" width="111" height="33"/>
+                                <rect key="frame" x="226" y="280" width="148" height="40"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Reset Passcode"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Reset Passcode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="resetPasscodeButtonTouched:" destination="qLu-2t-ZoR" eventType="touchUpInside" id="hE5-d5-vaJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Px2-07-xEe" firstAttribute="centerX" secondItem="xPz-sI-cB7" secondAttribute="centerX" id="QE4-zR-mVI"/>
                             <constraint firstItem="Px2-07-xEe" firstAttribute="centerY" secondItem="xPz-sI-cB7" secondAttribute="centerY" id="Scw-pM-z6g"/>
