@@ -1,21 +1,22 @@
 //
-//  NewsViewController.m
+//  NewsTableViewController.m
 //  CryptonatorDemo
 //
-//  Created by Z on 10/13/15.
+//  Created by Z on 10/17/15.
 //  Copyright © 2015 dereknetto. All rights reserved.
 //
 
-#import "NewsViewController.h"
+#import "NewsTableViewController.h"
 #import "SWRevealViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import "NYTArticle.h"
+#import "NYTTableViewCell.h"
 
-@interface NewsViewController ()
+@interface NewsTableViewController ()
 
 @end
 
-@implementation NewsViewController
+@implementation NewsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,8 +37,8 @@
 -(void)getNYTNewsArticles{
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
     [manager GET:@"http://api.nytimes.com/svc/search/v2/articlesearch.json?q=bitcoin&sort=newest&fq=headline.search:(%E2%80%9Cbitcoin%E2%80%9D)&api-key=6f6473f77c32f533ec0e8c7ed0f81177:18:73240506" parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-
-       NSDictionary *results = responseObject[@"response"][@"docs"];
+        
+        NSDictionary *results = responseObject[@"response"][@"docs"];
         
         self.articles = [[NSMutableArray alloc] init];
         for (NSDictionary *result in results) {
@@ -47,8 +48,35 @@
             [self.articles addObject:article];
         }
         
+        //reload tableview
+        [self.tableView reloadData];
+        
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
     }];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.articles.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NYTTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsIdentifier" forIndexPath:indexPath];
+    NYTArticle *article = self.articles[indexPath.row];
+    cell.headlineLabel.text = article.headline;
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NYTArticle *article = self.articles[indexPath.row];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:article.url]];
 }
 
 @end

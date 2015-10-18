@@ -11,6 +11,7 @@
 #import "CryptonatorTickerManager.h"
 #import "PredictionTableViewCell.h"
 #import "JournalEntryViewController.h"
+#import "PlayerDataModel.h"
 
 #import <ABPadLockScreen/ABPadLockScreenSetupViewController.h>
 #import <ABPadLockScreen/ABPadLockScreenViewController.h>
@@ -59,9 +60,20 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     //Register Nib for Cell Reuse Identifier
     [self.tableView registerNib:[UINib nibWithNibName:@"PredictionTableViewCell" bundle:nil] forCellReuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+//    BitcoinPrediction *prediction = [[BitcoinPrediction alloc] init];
+//    prediction.priceAtInstantOfPrediction = @4121.12;
+//    prediction.type = BTCLowPrediction;
+//    prediction.targetDate = [NSDate date];
+//    prediction.journalEntry = @"tHOLE";
+//    prediction.outcome = BTCIncorrect;
+//    //[prediction saveInBackground];
+//    
+//    PlayerDataModel *playerDataModel = [[PlayerDataModel alloc] init];
+//    playerDataModel.wins = @9991;
+//    playerDataModel.losses = @13;
+//    playerDataModel.predictions = [[NSMutableArray alloc] initWithObjects:prediction, nil];
+//    [playerDataModel saveInBackground];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{

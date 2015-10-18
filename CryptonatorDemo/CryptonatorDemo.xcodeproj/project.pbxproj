@@ -12,6 +12,9 @@
 		6902BC161BD07E11007C2876 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BC151BD07E11007C2876 /* libsqlite3.dylib */; };
 		691277E41BCABAA400946438 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691277E31BCABAA400946438 /* TickerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C92211BCCCD7500A14B2A /* InitialLockscreenViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69387B331BD33FCC0026F679 /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B321BD33FCC0026F679 /* NYTArticle.m */; settings = {ASSET_TAGS = (); }; };
+		69387B361BD347410026F679 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B351BD347410026F679 /* NewsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B381BD34B2B0026F679 /* NYTTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; settings = {ASSET_TAGS = (); }; };
 		69820AEA1BCAE47200A2AFDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE81BCAE47200A2AFDE /* menu.png */; settings = {ASSET_TAGS = (); }; };
 		69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE91BCAE47200A2AFDE /* menu@2x.png */; settings = {ASSET_TAGS = (); }; };
@@ -49,7 +52,6 @@
 		69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69CE53CE1BCDE9520078C136 /* Literature-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CC1BCDE9520078C136 /* Literature-32.png */; settings = {ASSET_TAGS = (); }; };
 		69CE53CF1BCDE9520078C136 /* News-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CD1BCDE9520078C136 /* News-32.png */; settings = {ASSET_TAGS = (); }; };
-		69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D11BCDE9C90078C136 /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D41BCDEA0F0078C136 /* JournalViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D71BCE03360078C136 /* JournalEntryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
@@ -71,6 +73,12 @@
 		691277E31BCABAA400946438 /* TickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TickerViewController.m; path = ../TickerViewController.m; sourceTree = "<group>"; };
 		692C92201BCCCD7500A14B2A /* InitialLockscreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialLockscreenViewController.h; path = ../InitialLockscreenViewController.h; sourceTree = "<group>"; };
 		692C92211BCCCD7500A14B2A /* InitialLockscreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialLockscreenViewController.m; path = ../InitialLockscreenViewController.m; sourceTree = "<group>"; };
+		69387B311BD33FCC0026F679 /* NYTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticle.h; sourceTree = "<group>"; };
+		69387B321BD33FCC0026F679 /* NYTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticle.m; sourceTree = "<group>"; };
+		69387B341BD347410026F679 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		69387B351BD347410026F679 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		69387B371BD34B2B0026F679 /* NYTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTableViewCell.h; sourceTree = "<group>"; };
+		69387B381BD34B2B0026F679 /* NYTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTableViewCell.m; sourceTree = "<group>"; };
 		69820AE61BCAE43500A2AFDE /* bitcoinicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoinicon.png; sourceTree = "<group>"; };
 		69820AE81BCAE47200A2AFDE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		69820AE91BCAE47200A2AFDE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
@@ -113,8 +121,6 @@
 		69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasscodeResetViewController.m; path = ../PasscodeResetViewController.m; sourceTree = "<group>"; };
 		69CE53CC1BCDE9520078C136 /* Literature-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Literature-32.png"; sourceTree = "<group>"; };
 		69CE53CD1BCDE9520078C136 /* News-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-32.png"; sourceTree = "<group>"; };
-		69CE53D01BCDE9C90078C136 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		69CE53D11BCDE9C90078C136 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		69CE53D31BCDEA0F0078C136 /* JournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalViewController.h; sourceTree = "<group>"; };
 		69CE53D41BCDEA0F0078C136 /* JournalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JournalViewController.m; sourceTree = "<group>"; };
 		69CE53D61BCE03360078C136 /* JournalEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JournalEntryViewController.h; sourceTree = "<group>"; };
@@ -201,6 +207,10 @@
 				69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */,
 				69820B401BCB70AA00A2AFDE /* PlayerDataModel.h */,
 				69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */,
+				69387B311BD33FCC0026F679 /* NYTArticle.h */,
+				69387B321BD33FCC0026F679 /* NYTArticle.m */,
+				69387B371BD34B2B0026F679 /* NYTTableViewCell.h */,
+				69387B381BD34B2B0026F679 /* NYTTableViewCell.m */,
 			);
 			name = Model;
 			path = SWRevealViewController;
@@ -229,8 +239,8 @@
 				69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */,
 				691277E21BCABAA400946438 /* TickerViewController.h */,
 				691277E31BCABAA400946438 /* TickerViewController.m */,
-				69CE53D01BCDE9C90078C136 /* NewsViewController.h */,
-				69CE53D11BCDE9C90078C136 /* NewsViewController.m */,
+				69387B341BD347410026F679 /* NewsTableViewController.h */,
+				69387B351BD347410026F679 /* NewsTableViewController.m */,
 				69CE53D31BCDEA0F0078C136 /* JournalViewController.h */,
 				69CE53D41BCDEA0F0078C136 /* JournalViewController.m */,
 				69CE53D61BCE03360078C136 /* JournalEntryViewController.h */,
@@ -456,13 +466,15 @@
 				69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */,
 				69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */,
 				69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */,
+				69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */,
 				69820B3E1BCB6DCF00A2AFDE /* BitcoinPrediction.m in Sources */,
 				692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */,
 				69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */,
+				69387B331BD33FCC0026F679 /* NYTArticle.m in Sources */,
 				69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */,
 				69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */,
-				69CE53D21BCDE9C90078C136 /* NewsViewController.m in Sources */,
 				69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */,
+				69387B361BD347410026F679 /* NewsTableViewController.m in Sources */,
 				69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */,
 				69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */,
 				691277E41BCABAA400946438 /* TickerViewController.m in Sources */,

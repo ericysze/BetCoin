@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface BitcoinPrediction : NSObject
+@interface BitcoinPrediction : PFObject <PFSubclassing>
 
 typedef NS_ENUM(NSInteger, PredictionType) {
     BTCHighPrediction,
@@ -21,12 +22,11 @@ typedef NS_ENUM(NSInteger, PredictionOutcome) {
     BTCUndecided
 };
 
-@property (nonatomic) double priceAtInstantOfPrediction;
+@property (nonatomic) NSNumber *priceAtInstantOfPrediction;
 @property (nonatomic) PredictionType type;
 @property (nonatomic) NSDate *targetDate;
 @property (nonatomic) NSString *journalEntry;
-
--(PredictionOutcome)outcome:(double)targetPrice;
+@property (nonatomic) PredictionOutcome outcome;
 
 @end
 

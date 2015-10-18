@@ -10,10 +10,12 @@
 #import "BitcoinPrediction.h"
 #import <Parse/Parse.h>
 
-@interface PlayerDataModel : PFObject
+@interface PlayerDataModel : PFObject <PFSubclassing>
 
-@property (nonatomic) NSInteger wins;
-@property (nonatomic) NSInteger losses;
-@property (nonatomic) NSArray *predictions;
+@property (nonatomic) NSNumber *wins;
+@property (nonatomic) NSNumber *losses;
+@property (nonatomic) NSMutableArray *predictions;
+
++ (NSString *)parseClassName;
 
 @end

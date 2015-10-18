@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "PlayerDataModel.h"
+#import "BitcoinPrediction.h"
 
 @interface AppDelegate ()
 
@@ -27,8 +29,9 @@
     [Parse setApplicationId:@"rikhmQ1uCOJzPw1tcwmmC66hyutQgE4eoc4A2OHQ"
                   clientKey:@"TuAdLW04w7v8DedcFHqgcyfdpIahDtFBjo82uYXo"];
     
-    // [Optional] Track statistics around application opens.
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [PlayerDataModel registerSubclass];
+    [BitcoinPrediction registerSubclass];
+    
     
     return YES;
 }
