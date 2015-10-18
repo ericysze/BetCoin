@@ -13,5 +13,4 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (nonatomic) NSMutableArray *articles;
 
-
 @end

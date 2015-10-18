@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     self.articles = [[NSMutableArray alloc] init];
+    
     //setup RevealViewController functionality
     if (self.revealViewController){
         [self.sidebarButton setTarget: self.revealViewController];
@@ -31,28 +33,36 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     animated = YES;
-    [self getNYTNewsArticles];
+    
+    [self getNYTNewsArticlesWithCallbackBlock:^{
+        [self.tableView reloadData];
+    }];
 }
 
--(void)getNYTNewsArticles{
+-(void)getNYTNewsArticlesWithCallbackBlock:(void(^)())block{
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
-    [manager GET:@"http://api.nytimes.com/svc/search/v2/articlesearch.json?q=bitcoin&sort=newest&fq=headline.search:(%E2%80%9Cbitcoin%E2%80%9D)&api-key=6f6473f77c32f533ec0e8c7ed0f81177:18:73240506" parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    
+    for (int i = 0; i<3; i++) {
+        NSString *pageString = [@"&page=" stringByAppendingString:[NSString stringWithFormat:@"%d",i]];
+        NSString * getString = [@"http://api.nytimes.com/svc/search/v2/articlesearch.json?q=bitcoin&sort=newest&fq=headline.search:(%E2%80%9Cbitcoin%E2%80%9D)&api-key=6f6473f77c32f533ec0e8c7ed0f81177:18:73240506" stringByAppendingString:pageString];
         
-        NSDictionary *results = responseObject[@"response"][@"docs"];
+        [manager GET:getString parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+            NSDictionary *results = responseObject[@"response"][@"docs"];
+            
+            for (NSDictionary *result in results) {
+                NYTArticle *article = [[NYTArticle alloc] init];
+                article.headline = result[@"headline"][@"main"];
+                article.url = result[@"web_url"];
+                [self.articles addObject:article];
+            }
+            
+            if (i == 2) {
+                block();
+            }
+            
+        } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {}];
         
-        self.articles = [[NSMutableArray alloc] init];
-        for (NSDictionary *result in results) {
-            NYTArticle *article = [[NYTArticle alloc] init];
-            article.headline = result[@"headline"][@"main"];
-            article.url = result[@"web_url"];
-            [self.articles addObject:article];
-        }
-        
-        //reload tableview
-        [self.tableView reloadData];
-        
-    } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
-    }];
+    }
 }
 
 #pragma mark - Table view data source
@@ -62,7 +72,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"%lu",(unsigned long)self.articles.count);
     return self.articles.count;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

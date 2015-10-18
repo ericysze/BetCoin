@@ -297,12 +297,14 @@
                                                 <rect key="frame" x="134" y="12" width="330.5" height="71.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="52"/>
-                                                <color key="textColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                         </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.56619996622975344" green="1" blue="0.52488778522036927" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.078431372549019607" green="0.80000000000000004" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="991-Zy-ZwK" firstAttribute="centerY" secondItem="Fi8-Ag-1do" secondAttribute="centerY" id="FGo-M3-Y6V"/>
                                             <constraint firstItem="991-Zy-ZwK" firstAttribute="centerX" secondItem="Fi8-Ag-1do" secondAttribute="centerX" id="Ufs-Ln-Euq"/>
@@ -315,7 +317,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="111"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9T-lF-zSL">
-                                                        <rect key="frame" x="170" y="5" width="100" height="100"/>
+                                                        <rect key="frame" x="170" y="-8" width="100" height="100"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="t9T-lF-zSL" secondAttribute="height" multiplier="1:1" id="3ie-nR-zJR"/>
@@ -330,17 +332,17 @@
                                                     </button>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="t9T-lF-zSL" secondAttribute="trailing" constant="30" id="N6r-vP-Hlu"/>
-                                                    <constraint firstItem="t9T-lF-zSL" firstAttribute="centerY" secondItem="lzk-Oj-IsJ" secondAttribute="centerY" id="yk3-wA-tgs"/>
+                                                    <constraint firstItem="t9T-lF-zSL" firstAttribute="centerY" secondItem="lzk-Oj-IsJ" secondAttribute="centerY" constant="-13" id="yk3-wA-tgs"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAs-iL-qou">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="111"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfR-eQ-yBg">
-                                                        <rect key="frame" x="30" y="6" width="100" height="100"/>
+                                                        <rect key="frame" x="30" y="-8" width="100" height="100"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="nfR-eQ-yBg" secondAttribute="height" multiplier="1:1" id="ZoG-Zd-6rJ"/>
@@ -361,9 +363,9 @@
                                                     </button>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="nfR-eQ-yBg" firstAttribute="centerY" secondItem="KAs-iL-qou" secondAttribute="centerY" id="49f-7q-AyN"/>
+                                                    <constraint firstItem="nfR-eQ-yBg" firstAttribute="centerY" secondItem="KAs-iL-qou" secondAttribute="centerY" constant="-13" id="49f-7q-AyN"/>
                                                     <constraint firstItem="nfR-eQ-yBg" firstAttribute="width" secondItem="nfR-eQ-yBg" secondAttribute="height" multiplier="1:1" id="LUn-1B-2cK"/>
                                                     <constraint firstItem="nfR-eQ-yBg" firstAttribute="leading" secondItem="KAs-iL-qou" secondAttribute="leading" constant="30" id="s1d-e3-yEI"/>
                                                 </constraints>
@@ -397,12 +399,12 @@
                                                         <rect key="frame" x="111" y="19" width="79.5" height="52"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="38"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <animations/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.53566679331306977" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="jFM-hX-KtZ" firstAttribute="centerY" secondItem="w50-MS-hwv" secondAttribute="centerY" id="47Z-Ap-i1h"/>
                                                     <constraint firstItem="jFM-hX-KtZ" firstAttribute="centerX" secondItem="w50-MS-hwv" secondAttribute="centerX" id="zi1-fF-PDr"/>
@@ -418,12 +420,12 @@
                                                                 <rect key="frame" x="101" y="7" width="97.5" height="30.5"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                         <animations/>
-                                                        <color key="backgroundColor" red="1" green="0.63921568627450975" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="fZb-lg-klX" firstAttribute="centerX" secondItem="wDf-U2-fFg" secondAttribute="centerX" id="DkD-FU-Z0M"/>
                                                             <constraint firstItem="fZb-lg-klX" firstAttribute="centerY" secondItem="wDf-U2-fFg" secondAttribute="centerY" id="wHk-GW-mph"/>
@@ -436,12 +438,12 @@
                                                                 <rect key="frame" x="96" y="7" width="107.5" height="30.5"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                         <animations/>
-                                                        <color key="backgroundColor" red="0.13389295212765959" green="0.92148318768996962" blue="0.69180993541033431" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="RPK-RB-YWZ" firstAttribute="centerY" secondItem="S1u-we-oqy" secondAttribute="centerY" id="maa-v1-YxP"/>
                                                             <constraint firstItem="RPK-RB-YWZ" firstAttribute="centerX" secondItem="S1u-we-oqy" secondAttribute="centerX" id="uSI-Lp-1S5"/>
@@ -505,7 +507,7 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aN2-iU-OBi">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PredictionIdentifier" rowHeight="68" id="RzQ-hn-krx" customClass="PredictionTableViewCell">
                                                 <rect key="frame" x="0.0" y="28" width="600" height="68"/>
@@ -656,7 +658,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsIdentifier" rowHeight="60" id="els-fw-BX9" customClass="NYTTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="60"/>
@@ -666,14 +668,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzW-it-dXc">
-                                            <rect key="frame" x="12" y="20" width="576" height="20"/>
+                                            <rect key="frame" x="12" y="18.5" width="576" height="23.5"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <animations/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="wzW-it-dXc" secondAttribute="trailing" constant="12" id="EKD-FT-MSy"/>
                                         <constraint firstItem="wzW-it-dXc" firstAttribute="centerX" secondItem="sfi-ml-wfB" secondAttribute="centerX" id="GQs-u2-cuc"/>
