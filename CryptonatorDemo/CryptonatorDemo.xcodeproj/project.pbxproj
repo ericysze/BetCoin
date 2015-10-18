@@ -18,6 +18,7 @@
 		69387B331BD33FCC0026F679 /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B321BD33FCC0026F679 /* NYTArticle.m */; };
 		69387B361BD347410026F679 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B351BD347410026F679 /* NewsTableViewController.m */; };
 		69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B381BD34B2B0026F679 /* NYTTableViewCell.m */; };
+		69387B3C1BD42B730026F679 /* NSDate+BTCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B3B1BD42B730026F679 /* NSDate+BTCDate.m */; settings = {ASSET_TAGS = (); }; };
 		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; };
 		69820AEA1BCAE47200A2AFDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE81BCAE47200A2AFDE /* menu.png */; };
 		69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE91BCAE47200A2AFDE /* menu@2x.png */; };
@@ -86,6 +87,8 @@
 		69387B351BD347410026F679 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
 		69387B371BD34B2B0026F679 /* NYTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTableViewCell.h; sourceTree = "<group>"; };
 		69387B381BD34B2B0026F679 /* NYTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTableViewCell.m; sourceTree = "<group>"; };
+		69387B3A1BD42B730026F679 /* NSDate+BTCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BTCDate.h"; sourceTree = "<group>"; };
+		69387B3B1BD42B730026F679 /* NSDate+BTCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BTCDate.m"; sourceTree = "<group>"; };
 		69820AE61BCAE43500A2AFDE /* bitcoinicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoinicon.png; sourceTree = "<group>"; };
 		69820AE81BCAE47200A2AFDE /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		69820AE91BCAE47200A2AFDE /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				69387B321BD33FCC0026F679 /* NYTArticle.m */,
 				69387B371BD34B2B0026F679 /* NYTTableViewCell.h */,
 				69387B381BD34B2B0026F679 /* NYTTableViewCell.m */,
+				69387B3A1BD42B730026F679 /* NSDate+BTCDate.h */,
+				69387B3B1BD42B730026F679 /* NSDate+BTCDate.m */,
 			);
 			name = Model;
 			path = SWRevealViewController;
@@ -477,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */,
+				69387B3C1BD42B730026F679 /* NSDate+BTCDate.m in Sources */,
 				69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */,
 				69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */,
 				69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */,

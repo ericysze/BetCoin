@@ -11,7 +11,6 @@
 @protocol JournalEntryViewControllerDelegate <NSObject>
 
 - (void)updateTableViewDataSourceWithString:(NSString *)string;
-
 - (void)updateTableViewDataSourceWithDate:(NSString *)logDate;
 
 @end

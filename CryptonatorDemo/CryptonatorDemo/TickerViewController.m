@@ -34,6 +34,7 @@ JournalEntryViewControllerDelegate>
 @property (nonatomic) NSMutableArray <NSString *> *userPrediction;
 @property (nonatomic) NSMutableArray <NSString *> *targetPredicationDate;
 
+@property (nonatomic) NSMutableArray *predictions;
 
 @end
 
@@ -99,8 +100,32 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
         }
     }
     BTCpasscodeViewControllerHasBeenShown = YES;
+    
+    [self getBitcoinPredicitonsFromParse];
 }
 
+#pragma mark - Parse
+
+-(void)getBitcoinPredicitonsFromParse{
+    PFQuery *query = [PFQuery queryWithClassName:@"BitcoinPrediction"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+        
+        NSArray *parseObjects = [NSArray arrayWithArray:objects];
+        
+        self.predictions = [[NSMutableArray alloc] init];
+        
+        for (PFObject *parseObject in parseObjects) {
+            BitcoinPrediction *prediction= [[BitcoinPrediction alloc] init];
+            prediction.targetDate = [parseObject objectForKey:@"targetDate"];
+            prediction.type = [[parseObject objectForKey:@"type"] integerValue];
+            prediction.priceAtInstantOfPrediction = [parseObject objectForKey:@"priceAtInstantOfPrediction"];
+            prediction.journalEntry = [parseObject objectForKey:@"journalEntry"];
+            [self.predictions addObject:prediction];
+        }
+        
+        [self.tableView reloadData];
+    }];
+}
 
 #pragma mark - TableView methods
 
@@ -109,7 +134,7 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.userPrediction.count;
+    return self.predictions.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,9 +145,10 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
         cell = [[PredictionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
     }
     
-    cell.userLogInput.text = self.userPrediction[[self.userPrediction count] -1 - indexPath.row];
-    cell.userDateInput.text = self.targetPredicationDate[[self.targetPredicationDate count] -1 - indexPath.row];
+    cell.prediction = [self.predictions objectAtIndex:indexPath.row];
     
+//    cell.userLogInput.text = self.userPrediction[[self.userPrediction count] -1 - indexPath.row];
+//    cell.userDateInput.text = self.targetPredicationDate[[self.targetPredicationDate count] -1 - indexPath.row];
     return cell;
 }
 
@@ -135,7 +161,7 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     [self addPopAnimationToButton:sender];
     
     JournalEntryViewController *journalEntryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PredictionViewController"];
-    journalEntryVC.upOrDown = sender == self.upButton ? @"up": @"down";
+    journalEntryVC.upOrDown = @"up";
     
     journalEntryVC.delegate = self;
     [self presentViewController:journalEntryVC animated:YES completion:nil];
@@ -146,7 +172,7 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     [self addPopAnimationToButton:sender];
     
     JournalEntryViewController *journalEntryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PredictionViewController"];
-    journalEntryVC.upOrDown = sender == self.downButton ? @"down": @"up";
+    journalEntryVC.upOrDown = @"down";
     
     journalEntryVC.delegate = self;
     [self presentViewController:journalEntryVC animated:YES completion:nil];
@@ -204,10 +230,8 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 
 #pragma mark - ABPadLockScreenSetupViewControllerDelegate methods
 - (void)pinSet:(NSString *)pin padLockScreenSetupViewController:(ABPadLockScreenSetupViewController *)padLockScreenViewController{
-    
     [[NSUserDefaults standardUserDefaults] setObject:pin forKey:@"pin"];
     [self dismissViewControllerAnimated:YES completion:nil];
-//    [self pushTickerViewController];
 }
 
 #pragma mark - ABPadLockScreenViewControllerDelegate methods
@@ -221,15 +245,12 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 
 - (void)unlockWasSuccessfulForPadLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController{
     [self dismissViewControllerAnimated:YES completion:nil];
-//    [self pushRevealViewController];
 }
 
 - (void)unlockWasUnsuccessful:(NSString *)falsePin afterAttemptNumber:(NSInteger)attemptNumber padLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController{
-    
 }
 
 - (void)unlockWasCancelledForPadLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController{
-    
 }
 
 #pragma storyboard

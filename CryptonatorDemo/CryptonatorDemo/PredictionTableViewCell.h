@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeToTargetDateLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *predictionArrowImage;
 
-@property (nonatomic, weak, readwrite) IBOutlet UILabel *userLogInput;
 @property (nonatomic, weak) IBOutlet UILabel *userDateInput;
 
 + (NSString *)reuseIdentifier;

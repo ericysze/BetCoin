@@ -9,18 +9,19 @@
 #import "JournalEntryViewController.h"
 #import <Social/Social.h>
 #import "Reachability.h"
+#import "BitcoinPrediction.h"
+#import "CryptonatorTickerManager.h"
 
 @interface JournalEntryViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *tickerPriceLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UIButton *tweetButton;
 @property (nonatomic) IBOutlet UIDatePicker *datePicker;
-
 @property (weak, nonatomic) IBOutlet UIButton *predictionButton;
 
 @property (nonatomic) NSString *dateString;
 @property (nonatomic) Reachability *internetReachableFoo;
-@property (nonatomic) NSDictionary *dictionaryForUpDownImage;
 
 @end
 
@@ -28,14 +29,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    
+    [self updateBTCTickerLabel];
+    
     [self.predictionButton setBackgroundImage:[UIImage imageNamed:([self.upOrDown isEqualToString:@"up"] ? @"orangeuparrow" : @"orangedownarrow")] forState:UIControlStateNormal];
-   
     [self textViewBorder];
     self.internetReachableFoo = [Reachability reachabilityForInternetConnection];
     [self datePickerSettings];
 }
 
+-(void)updateBTCTickerLabel{
+    CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
+    [manager getBitcoinTickerUpdateWithCallbackBlock:^{
+        self.tickerPriceLabel.text = [@"BTC: $" stringByAppendingString:[NSString stringWithFormat:@"%.2f",manager.bitcoinTicker.price]];
+    }];
+}
 
 #pragma mark - IBActions
 
@@ -57,29 +65,49 @@
     }
 }
 
-
 - (IBAction)postButtonTapped:(id)sender
 {
     if ([self.textView.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0) {
         //Do something
     }
     else{
-        NSString *log = self.textView.text;
         
-        [self.delegate updateTableViewDataSourceWithString:log];
-        [self.delegate updateTableViewDataSourceWithDate:self.dateString];
+        [self makePrediction];
         
         [self dismissViewControllerAnimated:YES completion:nil];
         
     }
 }
 
+-(void)makePrediction{
+    BitcoinPrediction *prediction = [[BitcoinPrediction alloc] init];
+    
+    //set price at instant of prediction
+    CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
+    prediction.priceAtInstantOfPrediction = [NSNumber numberWithDouble:manager.bitcoinTicker.price];
+    
+    //set prediction type
+    if ([self.upOrDown isEqualToString: @"up"]) {
+        prediction.type = BTCHighPrediction;
+    }
+    else if ([self.upOrDown isEqualToString:@"down"]){
+        prediction.type = BTCLowPrediction;
+    }
+    
+    //set target date
+    prediction.targetDate = self.datePicker.date;
+    
+    //set joural entry
+    prediction.journalEntry = self.textView.text;
+    
+    //save prediction to parse
+    [prediction saveInBackground];
+}
 
 #pragma mark - Functions
 
 - (void)datePickerSettings {
     [self.datePicker setMinimumDate:self.datePicker.date];
-    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MM-dd-YYYY HH:mm:ss"];
     self.dateString = [dateFormatter stringFromDate:self.datePicker.date];
@@ -141,8 +169,6 @@
     
     [self presentViewController:alert animated:YES completion:nil];
 }
-
-
 
 #pragma mark - View Layout
 
