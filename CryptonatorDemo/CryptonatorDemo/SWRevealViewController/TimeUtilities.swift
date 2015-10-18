@@ -8,13 +8,13 @@
 
 import UIKit
 
-func timeToTargetDate(targetDate: NSDate) -> NSTimeInterval{
+public func timeToTargetDate(targetDate: NSDate) -> NSTimeInterval{
     let currentDate = NSDate()
     let timeToTargetDate = targetDate.timeIntervalSinceDate(currentDate)
     return timeToTargetDate
 }
 
-func dateAndTimeStringsfromDate(date:NSDate) -> ([String]){
+public func dateAndTimeStringsfromDate(date:NSDate) -> ([String]){
     let formatter = NSDateFormatter()
     formatter.dateStyle = .LongStyle
     formatter.timeStyle = .ShortStyle
@@ -22,11 +22,11 @@ func dateAndTimeStringsfromDate(date:NSDate) -> ([String]){
     return (fullString.componentsSeparatedByString(" at "))
 }
 
-enum unit: Int {
+public enum unit: Int {
     case Year, Month, Day, Hour, Minute, Second, Millisecond, Poop
 }
 
-extension NSTimeInterval{
+public extension NSTimeInterval{
     
     func timeUnits() -> [Int]{
         let intInterval = Int(self)

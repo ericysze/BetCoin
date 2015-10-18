@@ -19,6 +19,10 @@
 #import <POP/POP.h>
 #import <Parse/Parse.h>
 
+#import "NSDate+BTCDate.h"
+
+#import "TTTTimeIntervalFormatter.h"
+
 @interface TickerViewController ()
 <UITableViewDataSource,
 UITableViewDelegate,
@@ -144,11 +148,27 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     if (cell == nil) {
         cell = [[PredictionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
     }
-    
-    cell.prediction = [self.predictions objectAtIndex:indexPath.row];
-    
 //    cell.userLogInput.text = self.userPrediction[[self.userPrediction count] -1 - indexPath.row];
 //    cell.userDateInput.text = self.targetPredicationDate[[self.targetPredicationDate count] -1 - indexPath.row];
+    
+    //give the cell a prediction
+    cell.prediction = [self.predictions objectAtIndex:indexPath.row];
+    
+    //set price at instant of prediction
+    cell.priceAtInstantOfPredictionLabel.text = [NSString stringWithFormat:@"$%.2f",[cell.prediction.priceAtInstantOfPrediction doubleValue]];
+    cell.userDateInput.text = [cell.prediction.targetDate stringFromDate];
+    
+    //set time to target date
+    TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
+    cell.timeToTargetDateLabel.text =  [timeIntervalFormatter stringForTimeIntervalFromDate:[NSDate date] toDate:cell.prediction.targetDate];
+    
+    //set image
+    if (cell.prediction.type == BTCHighPrediction) {
+        cell.predictionArrowImage.image = [UIImage imageNamed:@"uparrow"];
+    }
+    else if (cell.prediction.type == BTCLowPrediction){
+        cell.predictionArrowImage.image = [UIImage imageNamed:@"downarrow"];
+    }
     return cell;
 }
 
@@ -271,6 +291,16 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     [self.targetPredicationDate addObject:logDate];
     [self.tableView reloadData];
     
+}
+
+#pragma mark - helper methods
+
+-(NSTimeInterval)timeToTargetDate:(NSDate*)targetDate{
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeToTargetDate = [targetDate timeIntervalSinceDate:currentDate];
+
+    
+    return timeToTargetDate;
 }
 
 @end

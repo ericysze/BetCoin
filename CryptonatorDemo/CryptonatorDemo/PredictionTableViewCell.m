@@ -14,17 +14,6 @@
 - (void)awakeFromNib {
     // Initialization code
     //update user date input
-    
-    self.priceAtInstantOfPredictionLabel.text = [NSString stringWithFormat:@"%@",self.prediction.priceAtInstantOfPrediction];
-    self.userDateInput.text = [self.prediction.targetDate stringFromDate];
-    self.timeToTargetDateLabel.text =[NSString stringWithFormat:@"%f", [self timeToTargetDate:self.prediction.targetDate]];
-    
-    if (self.prediction.type == BTCHighPrediction) {
-        self.imageView.image = [UIImage imageNamed:@"uparrow"];
-    }
-    else if (self.prediction.type == BTCLowPrediction){
-        self.imageView.image = [UIImage imageNamed:@"downarrow"];
-    }
 }
 
 -(NSTimeInterval)timeToTargetDate:(NSDate*)targetDate{

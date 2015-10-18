@@ -4,3 +4,4 @@ pod "ABPadLockScreen", "~> 3.3.0"
 pod "coinbase-official"
 pod 'pop', '~> 1.0'
 pod 'Parse'
+pod 'FormatterKit', '~> 1.8'

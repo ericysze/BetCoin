@@ -12,9 +12,28 @@
 
 -(NSString *)stringFromDate{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd-YYYY HH:mm:ss"];
+    [dateFormatter setDateFormat:@"HH:mm:ss MM/dd/YYYY"];
     NSString *dateString = [dateFormatter stringFromDate:self];
     return dateString;
 }
+
+-(NSTimeInterval)timeToTargetDate{
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeToTargetDate = [currentDate timeIntervalSinceDate:self];
+    return timeToTargetDate;
+}
+
+typedef NS_ENUM(NSInteger, PredictionType) {
+    Year,
+    Month,
+    Day,
+    Hour,
+    Minute,
+    Second,
+    Millisecond,
+    Poop
+};
+
+
 
 @end
