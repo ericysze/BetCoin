@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol JournalEntryViewControllerDelegate <NSObject>
+
+- (void)updateTableViewDataSourceWithString:(NSString *)string;
+
+- (void)updateTableViewDataSourceWithDate:(NSString *)logDate;
+
+@end
+
 @interface JournalEntryViewController : UIViewController
+
+@property (nonatomic) NSString *upOrDown;
+@property (nonatomic, weak) id <JournalEntryViewControllerDelegate> delegate;
 
 @end

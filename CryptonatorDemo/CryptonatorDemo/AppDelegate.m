@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "PlayerDataModel.h"
 #import "BitcoinPrediction.h"
+#import "Reachability.h"
 
 @interface AppDelegate ()
 

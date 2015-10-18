@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -549,10 +549,11 @@
                         <barButtonItem key="leftBarButtonItem" image="Bitcoin-32" id="CQk-dr-iQg"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="downButton" destination="nfR-eQ-yBg" id="Aib-0G-Rdx"/>
                         <outlet property="sidebarButton" destination="CQk-dr-iQg" id="RxR-Ie-gCx"/>
                         <outlet property="tableView" destination="aN2-iU-OBi" id="ZGv-fV-KUo"/>
                         <outlet property="tickerPriceLabel" destination="991-Zy-ZwK" id="5bj-Lc-1dU"/>
-                        <segue destination="He3-dz-14p" kind="presentation" identifier="JournalEntryViewControllerSegueIdentifier" id="M89-EI-ngJ"/>
+                        <outlet property="upButton" destination="t9T-lF-zSL" id="3ky-5s-xfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVk-zk-MV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -579,7 +580,7 @@
         <!--Journal Entry View Controller-->
         <scene sceneID="xSX-kD-wvP">
             <objects>
-                <viewController id="He3-dz-14p" customClass="JournalEntryViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PredictionViewController" id="He3-dz-14p" customClass="JournalEntryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Wr-Kq-GhY"/>
                         <viewControllerLayoutGuide type="bottom" id="OeJ-PJ-Du4"/>
@@ -588,25 +589,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW1-n9-FoG">
-                                <rect key="frame" x="280" y="290" width="40" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC: $248.88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAF-z8-8Ph">
+                                <rect key="frame" x="108" y="82" width="238.5" height="47"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="39"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-dk-zNI">
+                                <rect key="frame" x="20" y="67" width="78" height="78"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="dil-7b-gcK"/>
+                                    <constraint firstAttribute="height" constant="78" id="eGa-3l-f8H"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klu-sL-aVF">
+                                <rect key="frame" x="394" y="515" width="70" height="27"/>
+                                <animations/>
+                                <state key="normal" image="tweetbutton"/>
+                                <connections>
+                                    <action selector="tweetButtonTapped:" destination="He3-dz-14p" eventType="touchUpInside" id="p0Z-Bs-e3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-9a-h3e">
+                                <rect key="frame" x="519" y="514" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonTapped:" destination="He3-dz-14p" eventType="touchUpInside" id="5Ji-2r-J7i"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-Nj-NAi">
+                                <rect key="frame" x="50" y="376" width="500" height="130"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="JhS-hv-fAF"/>
+                                    <constraint firstAttribute="height" constant="130" id="VYX-LC-UxC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JhS-hv-fAF"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KVK-m6-pQo">
+                                <rect key="frame" x="0.0" y="152" width="600" height="216"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="xUc-fO-IXz"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="466290058.788629">
+                                    <!--2015-10-11 21:00:58 +0000-->
+                                </date>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xUc-fO-IXz"/>
+                                    </mask>
+                                </variation>
+                            </datePicker>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YW1-n9-FoG" firstAttribute="centerX" secondItem="fDr-Rf-sUD" secondAttribute="centerX" id="Bcj-8F-92O"/>
-                            <constraint firstItem="YW1-n9-FoG" firstAttribute="centerY" secondItem="fDr-Rf-sUD" secondAttribute="centerY" id="Qef-tb-kYd"/>
+                            <constraint firstItem="BAF-z8-8Ph" firstAttribute="top" secondItem="0Wr-Kq-GhY" secondAttribute="bottom" constant="62" id="0nu-mO-qJe"/>
+                            <constraint firstItem="KVK-m6-pQo" firstAttribute="leading" secondItem="fDr-Rf-sUD" secondAttribute="leading" id="4Th-fC-deQ"/>
+                            <constraint firstAttribute="trailing" secondItem="iCM-9a-h3e" secondAttribute="trailing" constant="50" id="5Yj-hp-9HU"/>
+                            <constraint firstItem="iCM-9a-h3e" firstAttribute="leading" secondItem="klu-sL-aVF" secondAttribute="trailing" constant="55" id="8R0-yY-QTI"/>
+                            <constraint firstItem="5bv-Nj-NAi" firstAttribute="leading" secondItem="fDr-Rf-sUD" secondAttribute="leading" constant="50" id="AVo-B8-0N9"/>
+                            <constraint firstItem="mjK-dk-zNI" firstAttribute="top" secondItem="0Wr-Kq-GhY" secondAttribute="bottom" constant="47" id="JuG-fU-yIu"/>
+                            <constraint firstItem="KVK-m6-pQo" firstAttribute="centerX" secondItem="fDr-Rf-sUD" secondAttribute="centerX" id="KqW-WA-txK"/>
+                            <constraint firstItem="BAF-z8-8Ph" firstAttribute="leading" secondItem="mjK-dk-zNI" secondAttribute="trailing" constant="10" id="Std-3L-Kcb"/>
+                            <constraint firstItem="5bv-Nj-NAi" firstAttribute="top" secondItem="KVK-m6-pQo" secondAttribute="bottom" constant="8" id="W2O-Q4-ron"/>
+                            <constraint firstItem="iCM-9a-h3e" firstAttribute="leading" secondItem="klu-sL-aVF" secondAttribute="trailing" constant="55" id="Xbo-dW-Y5t"/>
+                            <constraint firstAttribute="trailing" secondItem="5bv-Nj-NAi" secondAttribute="trailing" constant="50" id="bXW-AC-z82"/>
+                            <constraint firstItem="klu-sL-aVF" firstAttribute="top" secondItem="5bv-Nj-NAi" secondAttribute="bottom" constant="9" id="hHl-Us-z14"/>
+                            <constraint firstAttribute="trailing" secondItem="KVK-m6-pQo" secondAttribute="trailing" id="lfS-pd-b4C"/>
+                            <constraint firstItem="iCM-9a-h3e" firstAttribute="top" secondItem="5bv-Nj-NAi" secondAttribute="bottom" constant="8" id="oV0-Ax-QZ1"/>
+                            <constraint firstItem="KVK-m6-pQo" firstAttribute="top" secondItem="mjK-dk-zNI" secondAttribute="bottom" constant="7" id="tjj-s8-Aah"/>
+                            <constraint firstItem="mjK-dk-zNI" firstAttribute="leading" secondItem="fDr-Rf-sUD" secondAttribute="leading" constant="20" id="wgV-dT-yg0"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8R0-yY-QTI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="KVK-m6-pQo" id="ltY-Ds-KAI"/>
+                        <outlet property="predictionButton" destination="mjK-dk-zNI" id="z37-J7-jag"/>
+                        <outlet property="textView" destination="5bv-Nj-NAi" id="epP-KL-4ft"/>
+                        <outlet property="tweetButton" destination="klu-sL-aVF" id="uap-28-wPo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnA-Yh-kks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2072" y="-645"/>
+            <point key="canvasLocation" x="2066" y="-645"/>
         </scene>
         <!--Journal View Controller-->
         <scene sceneID="b9N-NF-baC">
@@ -786,9 +865,10 @@
         <image name="News-32" width="32" height="32"/>
         <image name="News-512.png" width="512" height="512"/>
         <image name="downarrow" width="512" height="512"/>
+        <image name="tweetbutton" width="70" height="27"/>
         <image name="uparrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FHA-lr-c3y"/>
+        <segue reference="LHO-20-lJC"/>
     </inferredMetricsTieBreakers>
 </document>

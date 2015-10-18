@@ -8,64 +8,71 @@
 
 /* Begin PBXBuildFile section */
 		0A30C8C009086E3AF53C4058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C2219AC37CE886DFBCB980 /* libPods.a */; };
+		156AB0E01BD3E861009ED5EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AB0DF1BD3E861009ED5EE /* SystemConfiguration.framework */; };
+		156AB0E21BD3E86D009ED5EE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AB0E11BD3E86D009ED5EE /* Social.framework */; };
+		156AB0E51BD3E95A009ED5EE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 156AB0E41BD3E95A009ED5EE /* Reachability.m */; };
 		6902BC141BD07DF5007C2876 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BC131BD07DF5007C2876 /* libz.1.dylib */; };
 		6902BC161BD07E11007C2876 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6902BC151BD07E11007C2876 /* libsqlite3.dylib */; };
-		691277E41BCABAA400946438 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691277E31BCABAA400946438 /* TickerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C92211BCCCD7500A14B2A /* InitialLockscreenViewController.m */; settings = {ASSET_TAGS = (); }; };
-		69387B331BD33FCC0026F679 /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B321BD33FCC0026F679 /* NYTArticle.m */; settings = {ASSET_TAGS = (); }; };
-		69387B361BD347410026F679 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B351BD347410026F679 /* NewsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B381BD34B2B0026F679 /* NYTTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; settings = {ASSET_TAGS = (); }; };
-		69820AEA1BCAE47200A2AFDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE81BCAE47200A2AFDE /* menu.png */; settings = {ASSET_TAGS = (); }; };
-		69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE91BCAE47200A2AFDE /* menu@2x.png */; settings = {ASSET_TAGS = (); }; };
-		69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFE1BCAF55200A2AFDE /* Key Filled-512.png */; settings = {ASSET_TAGS = (); }; };
-		69820B051BCAF55200A2AFDE /* Key-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFF1BCAF55200A2AFDE /* Key-512.png */; settings = {ASSET_TAGS = (); }; };
-		69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B001BCAF55200A2AFDE /* Literature Filled-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B011BCAF55200A2AFDE /* Literature-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B081BCAF55200A2AFDE /* News-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B021BCAF55200A2AFDE /* News-512.png */; settings = {ASSET_TAGS = (); }; };
-		69820B091BCAF55200A2AFDE /* News Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B031BCAF55200A2AFDE /* News Filled-512.png */; settings = {ASSET_TAGS = (); }; };
-		69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0A1BCB024100A2AFDE /* up-arrow-icon.png */; settings = {ASSET_TAGS = (); }; };
-		69820B0D1BCB024A00A2AFDE /* down-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0C1BCB024A00A2AFDE /* down-arrow-icon.png */; settings = {ASSET_TAGS = (); }; };
-		69820B121BCB09A200A2AFDE /* orangeuparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */; settings = {ASSET_TAGS = (); }; };
-		69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */; settings = {ASSET_TAGS = (); }; };
-		69820B141BCB09A200A2AFDE /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B101BCB09A200A2AFDE /* uparrow.png */; settings = {ASSET_TAGS = (); }; };
-		69820B151BCB09A200A2AFDE /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B111BCB09A200A2AFDE /* downarrow.png */; settings = {ASSET_TAGS = (); }; };
-		69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		69820B231BCB4F7800A2AFDE /* PredictionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		69820B281BCB54A700A2AFDE /* Money-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B241BCB54A700A2AFDE /* Money-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B291BCB54A700A2AFDE /* Money Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B251BCB54A700A2AFDE /* Money Filled-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B261BCB54A700A2AFDE /* Bitcoin Filled-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B2B1BCB54A700A2AFDE /* Bitcoin-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B271BCB54A700A2AFDE /* Bitcoin-100.png */; settings = {ASSET_TAGS = (); }; };
-		69820B2E1BCB553900A2AFDE /* Money Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2C1BCB553900A2AFDE /* Money Filled-50.png */; settings = {ASSET_TAGS = (); }; };
-		69820B2F1BCB553900A2AFDE /* Money-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2D1BCB553900A2AFDE /* Money-50.png */; settings = {ASSET_TAGS = (); }; };
-		69820B321BCB55D600A2AFDE /* Money Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B301BCB55D600A2AFDE /* Money Filled-32.png */; settings = {ASSET_TAGS = (); }; };
-		69820B331BCB55D600A2AFDE /* Money-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B311BCB55D600A2AFDE /* Money-32.png */; settings = {ASSET_TAGS = (); }; };
-		69820B361BCB564500A2AFDE /* Bitcoin-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B341BCB564500A2AFDE /* Bitcoin-25.png */; settings = {ASSET_TAGS = (); }; };
-		69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B351BCB564500A2AFDE /* Bitcoin Filled-25.png */; settings = {ASSET_TAGS = (); }; };
-		69820B3A1BCB567C00A2AFDE /* Bitcoin Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */; settings = {ASSET_TAGS = (); }; };
-		69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B391BCB567C00A2AFDE /* Bitcoin-32.png */; settings = {ASSET_TAGS = (); }; };
-		69820B3E1BCB6DCF00A2AFDE /* BitcoinPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */; settings = {ASSET_TAGS = (); }; };
-		69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */; settings = {ASSET_TAGS = (); }; };
-		69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B431BCCBB4000A2AFDE /* Key-32.png */; settings = {ASSET_TAGS = (); }; };
-		69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B441BCCBB4000A2AFDE /* Key Filled-32.png */; settings = {ASSET_TAGS = (); }; };
-		69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */; settings = {ASSET_TAGS = (); }; };
-		69CE53CE1BCDE9520078C136 /* Literature-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CC1BCDE9520078C136 /* Literature-32.png */; settings = {ASSET_TAGS = (); }; };
-		69CE53CF1BCDE9520078C136 /* News-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CD1BCDE9520078C136 /* News-32.png */; settings = {ASSET_TAGS = (); }; };
-		69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D41BCDEA0F0078C136 /* JournalViewController.m */; settings = {ASSET_TAGS = (); }; };
-		69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D71BCE03360078C136 /* JournalEntryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		691277E41BCABAA400946438 /* TickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691277E31BCABAA400946438 /* TickerViewController.m */; };
+		692C92221BCCCD7500A14B2A /* InitialLockscreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C92211BCCCD7500A14B2A /* InitialLockscreenViewController.m */; };
+		69387B331BD33FCC0026F679 /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B321BD33FCC0026F679 /* NYTArticle.m */; };
+		69387B361BD347410026F679 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B351BD347410026F679 /* NewsTableViewController.m */; };
+		69387B391BD34B2B0026F679 /* NYTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69387B381BD34B2B0026F679 /* NYTTableViewCell.m */; };
+		69820AE71BCAE43500A2AFDE /* bitcoinicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE61BCAE43500A2AFDE /* bitcoinicon.png */; };
+		69820AEA1BCAE47200A2AFDE /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE81BCAE47200A2AFDE /* menu.png */; };
+		69820AEB1BCAE47200A2AFDE /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AE91BCAE47200A2AFDE /* menu@2x.png */; };
+		69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820AED1BCAEC1000A2AFDE /* OptionsTableViewController.m */; };
+		69820B041BCAF55200A2AFDE /* Key Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFE1BCAF55200A2AFDE /* Key Filled-512.png */; };
+		69820B051BCAF55200A2AFDE /* Key-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820AFF1BCAF55200A2AFDE /* Key-512.png */; };
+		69820B061BCAF55200A2AFDE /* Literature Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B001BCAF55200A2AFDE /* Literature Filled-100.png */; };
+		69820B071BCAF55200A2AFDE /* Literature-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B011BCAF55200A2AFDE /* Literature-100.png */; };
+		69820B081BCAF55200A2AFDE /* News-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B021BCAF55200A2AFDE /* News-512.png */; };
+		69820B091BCAF55200A2AFDE /* News Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B031BCAF55200A2AFDE /* News Filled-512.png */; };
+		69820B0B1BCB024100A2AFDE /* up-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0A1BCB024100A2AFDE /* up-arrow-icon.png */; };
+		69820B0D1BCB024A00A2AFDE /* down-arrow-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0C1BCB024A00A2AFDE /* down-arrow-icon.png */; };
+		69820B121BCB09A200A2AFDE /* orangeuparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0E1BCB09A200A2AFDE /* orangeuparrow.png */; };
+		69820B131BCB09A200A2AFDE /* orangedownarrow 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B0F1BCB09A200A2AFDE /* orangedownarrow 2.png */; };
+		69820B141BCB09A200A2AFDE /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B101BCB09A200A2AFDE /* uparrow.png */; };
+		69820B151BCB09A200A2AFDE /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B111BCB09A200A2AFDE /* downarrow.png */; };
+		69820B211BCB4F4200A2AFDE /* PredictionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B201BCB4F4200A2AFDE /* PredictionTableViewCell.m */; };
+		69820B231BCB4F7800A2AFDE /* PredictionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69820B221BCB4F7800A2AFDE /* PredictionTableViewCell.xib */; };
+		69820B281BCB54A700A2AFDE /* Money-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B241BCB54A700A2AFDE /* Money-100.png */; };
+		69820B291BCB54A700A2AFDE /* Money Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B251BCB54A700A2AFDE /* Money Filled-100.png */; };
+		69820B2A1BCB54A700A2AFDE /* Bitcoin Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B261BCB54A700A2AFDE /* Bitcoin Filled-100.png */; };
+		69820B2B1BCB54A700A2AFDE /* Bitcoin-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B271BCB54A700A2AFDE /* Bitcoin-100.png */; };
+		69820B2E1BCB553900A2AFDE /* Money Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2C1BCB553900A2AFDE /* Money Filled-50.png */; };
+		69820B2F1BCB553900A2AFDE /* Money-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B2D1BCB553900A2AFDE /* Money-50.png */; };
+		69820B321BCB55D600A2AFDE /* Money Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B301BCB55D600A2AFDE /* Money Filled-32.png */; };
+		69820B331BCB55D600A2AFDE /* Money-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B311BCB55D600A2AFDE /* Money-32.png */; };
+		69820B361BCB564500A2AFDE /* Bitcoin-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B341BCB564500A2AFDE /* Bitcoin-25.png */; };
+		69820B371BCB564500A2AFDE /* Bitcoin Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B351BCB564500A2AFDE /* Bitcoin Filled-25.png */; };
+		69820B3A1BCB567C00A2AFDE /* Bitcoin Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B381BCB567C00A2AFDE /* Bitcoin Filled-32.png */; };
+		69820B3B1BCB567C00A2AFDE /* Bitcoin-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B391BCB567C00A2AFDE /* Bitcoin-32.png */; };
+		69820B3E1BCB6DCF00A2AFDE /* BitcoinPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B3D1BCB6DCF00A2AFDE /* BitcoinPrediction.m */; };
+		69820B421BCB70AA00A2AFDE /* PlayerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69820B411BCB70AA00A2AFDE /* PlayerDataModel.m */; };
+		69820B451BCCBB4000A2AFDE /* Key-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B431BCCBB4000A2AFDE /* Key-32.png */; };
+		69820B461BCCBB4000A2AFDE /* Key Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69820B441BCCBB4000A2AFDE /* Key Filled-32.png */; };
+		69CE53C91BCDCC060078C136 /* PasscodeResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53C81BCDCC060078C136 /* PasscodeResetViewController.m */; };
+		69CE53CE1BCDE9520078C136 /* Literature-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CC1BCDE9520078C136 /* Literature-32.png */; };
+		69CE53CF1BCDE9520078C136 /* News-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE53CD1BCDE9520078C136 /* News-32.png */; };
+		69CE53D51BCDEA0F0078C136 /* JournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D41BCDEA0F0078C136 /* JournalViewController.m */; };
+		69CE53D81BCE03360078C136 /* JournalEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE53D71BCE03360078C136 /* JournalEntryViewController.m */; };
 		69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9B1BC9698A00E1A7F7 /* main.m */; };
 		69D4CB9F1BC9698A00E1A7F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */; };
 		69D4CBA51BC9698A00E1A7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */; };
 		69D4CBA71BC9698A00E1A7F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA61BC9698A00E1A7F7 /* Assets.xcassets */; };
 		69D4CBAA1BC9698A00E1A7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */; };
-		69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F431BC99F1200CDC747 /* BitcoinTicker.m */; settings = {ASSET_TAGS = (); }; };
-		69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */; settings = {ASSET_TAGS = (); }; };
+		69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F431BC99F1200CDC747 /* BitcoinTicker.m */; };
+		69F06F471BC9A40B00CDC747 /* CryptonatorTickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F461BC9A40B00CDC747 /* CryptonatorTickerManager.m */; };
 		69F06F491BC9B22500CDC747 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F06F481BC9B22500CDC747 /* CoreGraphics.framework */; };
-		69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */; settings = {ASSET_TAGS = (); }; };
+		69F06F4D1BC9B96400CDC747 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F06F4C1BC9B96400CDC747 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156AB0DF1BD3E861009ED5EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		156AB0E11BD3E86D009ED5EE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		156AB0E31BD3E95A009ED5EE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		156AB0E41BD3E95A009ED5EE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		63CBC032AE9665FB99098A40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6902BC131BD07DF5007C2876 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		6902BC151BD07E11007C2876 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
@@ -149,6 +156,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156AB0E21BD3E86D009ED5EE /* Social.framework in Frameworks */,
+				156AB0E01BD3E861009ED5EE /* SystemConfiguration.framework in Frameworks */,
 				6902BC161BD07E11007C2876 /* libsqlite3.dylib in Frameworks */,
 				6902BC141BD07DF5007C2876 /* libz.1.dylib in Frameworks */,
 				69F06F491BC9B22500CDC747 /* CoreGraphics.framework in Frameworks */,
@@ -278,6 +287,8 @@
 				69CE53CB1BCDD1B60078C136 /* Controller */,
 				69D4CB9D1BC9698A00E1A7F7 /* AppDelegate.h */,
 				69D4CB9E1BC9698A00E1A7F7 /* AppDelegate.m */,
+				156AB0E31BD3E95A009ED5EE /* Reachability.h */,
+				156AB0E41BD3E95A009ED5EE /* Reachability.m */,
 				69D4CBA31BC9698A00E1A7F7 /* Main.storyboard */,
 				69D4CBA81BC9698A00E1A7F7 /* LaunchScreen.storyboard */,
 				69820AE51BCAE43500A2AFDE /* Images */,
@@ -317,6 +328,8 @@
 		A18749843D6712FBBA42E357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				156AB0E11BD3E86D009ED5EE /* Social.framework */,
+				156AB0DF1BD3E861009ED5EE /* SystemConfiguration.framework */,
 				6902BC151BD07E11007C2876 /* libsqlite3.dylib */,
 				6902BC131BD07DF5007C2876 /* libz.1.dylib */,
 				69F06F481BC9B22500CDC747 /* CoreGraphics.framework */,
@@ -479,6 +492,7 @@
 				69820AEE1BCAEC1000A2AFDE /* OptionsTableViewController.m in Sources */,
 				691277E41BCABAA400946438 /* TickerViewController.m in Sources */,
 				69F06F441BC99F1200CDC747 /* BitcoinTicker.m in Sources */,
+				156AB0E51BD3E95A009ED5EE /* Reachability.m in Sources */,
 				69D4CB9C1BC9698A00E1A7F7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

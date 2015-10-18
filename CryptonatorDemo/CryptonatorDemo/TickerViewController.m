@@ -23,10 +23,18 @@
 <UITableViewDataSource,
 UITableViewDelegate,
 ABPadLockScreenSetupViewControllerDelegate,
-ABPadLockScreenViewControllerDelegate>
+ABPadLockScreenViewControllerDelegate,
+JournalEntryViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *tickerPriceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *upButton;
+@property (weak, nonatomic) IBOutlet UIButton *downButton;
+
+@property (nonatomic) NSMutableArray <NSString *> *userPrediction;
+@property (nonatomic) NSMutableArray <NSString *> *targetPredicationDate;
+
+
 @end
 
 //static variable persists on class
@@ -56,6 +64,9 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     //UITableView Protocol
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    self.userPrediction = [NSMutableArray new];
+    self.targetPredicationDate = [NSMutableArray new];
     
     //Register Nib for Cell Reuse Identifier
     [self.tableView registerNib:[UINib nibWithNibName:@"PredictionTableViewCell" bundle:nil] forCellReuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
@@ -94,11 +105,11 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 #pragma mark - TableView methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 5;
+    return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.userPrediction.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -108,6 +119,9 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     if (cell == nil) {
         cell = [[PredictionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[PredictionTableViewCell reuseIdentifier]];
     }
+    
+    cell.userLogInput.text = self.userPrediction[[self.userPrediction count] -1 - indexPath.row];
+    cell.userDateInput.text = self.targetPredicationDate[[self.targetPredicationDate count] -1 - indexPath.row];
     
     return cell;
 }
@@ -119,10 +133,23 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 - (IBAction)upArrowButtonTouched:(UIButton *)sender {
     [sender setImage:[UIImage imageNamed:@"orangeuparrow"] forState:UIControlStateNormal];
     [self addPopAnimationToButton:sender];
+    
+    JournalEntryViewController *journalEntryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PredictionViewController"];
+    journalEntryVC.upOrDown = sender == self.upButton ? @"up": @"down";
+    
+    journalEntryVC.delegate = self;
+    [self presentViewController:journalEntryVC animated:YES completion:nil];
 }
+
 - (IBAction)downArrowButtonTouched:(UIButton *)sender {
     [sender setImage:[UIImage imageNamed:@"orangedownarrow"] forState:UIControlStateNormal];
     [self addPopAnimationToButton:sender];
+    
+    JournalEntryViewController *journalEntryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PredictionViewController"];
+    journalEntryVC.upOrDown = sender == self.downButton ? @"down": @"up";
+    
+    journalEntryVC.delegate = self;
+    [self presentViewController:journalEntryVC animated:YES completion:nil];
 }
 
 
@@ -132,7 +159,6 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     scaleAnimation.springBounciness = 25.f;
     scaleAnimation.springSpeed = 80;
     scaleAnimation.completionBlock = ^(POPAnimation *anim, BOOL finished){
-        [self presentJournalEntryViewController];
     };
     scaleAnimation.removedOnCompletion = YES;
     [button.layer pop_addAnimation:scaleAnimation forKey:@"scaleAnim"];
@@ -158,9 +184,9 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     [self presentViewController:lockScreen animated:YES completion:nil];
 }
 
--(void)presentJournalEntryViewController{
-    [self performSegueWithIdentifier:@"JournalEntryViewControllerSegueIdentifier" sender:self];
-}
+//-(void)presentJournalEntryViewController{
+//    [self performSegueWithIdentifier:@"PredictionViewController" sender:self];
+//}
 
 #pragma mark - push view controller methods
 
@@ -208,8 +234,22 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
 
 #pragma storyboard
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    NSLog(@"preparing for segure");
+    NSLog(@"prepare for seguee");
 }
 
+#pragma mark - ViewControllerDelegate Methods
+
+- (void)updateTableViewDataSourceWithString:(NSString *)string
+{
+    [self.userPrediction addObject:string];
+    [self.tableView reloadData];
+}
+
+- (void)updateTableViewDataSourceWithDate:(NSString *)logDate
+{
+    [self.targetPredicationDate addObject:logDate];
+    [self.tableView reloadData];
+    
+}
 
 @end
