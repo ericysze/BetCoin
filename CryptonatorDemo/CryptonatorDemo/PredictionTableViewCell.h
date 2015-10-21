@@ -11,6 +11,7 @@
 
 @interface PredictionTableViewCell : UITableViewCell
 @property (nonatomic) BitcoinPrediction *prediction;
+@property (weak, nonatomic) IBOutlet UILabel *journalEntryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceAtInstantOfPredictionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *targetDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeToTargetDateLabel;

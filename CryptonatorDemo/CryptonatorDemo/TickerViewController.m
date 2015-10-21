@@ -40,6 +40,8 @@ JournalEntryViewControllerDelegate>
 
 @property (nonatomic) NSMutableArray *predictions;
 
+@property (strong, nonatomic) NSIndexPath *expandedIndexPath;
+
 @end
 
 //static variable persists on class
@@ -51,6 +53,7 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     [super viewDidLoad];
     
     [self.navigationController setNavigationBarHidden:NO];
+    
     
     CryptonatorTickerManager *manager = [CryptonatorTickerManager sharedManager];
     
@@ -150,17 +153,32 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     }
 //    cell.userLogInput.text = self.userPrediction[[self.userPrediction count] -1 - indexPath.row];
 //    cell.userDateInput.text = self.targetPredicationDate[[self.targetPredicationDate count] -1 - indexPath.row];
+  
+    
     
     //give the cell a prediction
-    cell.prediction = [self.predictions objectAtIndex:indexPath.row];
+    
+    // most recent entry at last cell
+    //  cell.prediction = [self.predictions objectAtIndex:indexPath.row];
+
+    // most recent entry at first cell
+    cell.prediction = self.predictions[[self.predictions count] -1 -indexPath.row];
     
     //set price at instant of prediction
     cell.priceAtInstantOfPredictionLabel.text = [NSString stringWithFormat:@"$%.2f",[cell.prediction.priceAtInstantOfPrediction doubleValue]];
+    
+    
     cell.userDateInput.text = [cell.prediction.targetDate stringFromDate];
     
     //set time to target date
     TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
     cell.timeToTargetDateLabel.text =  [timeIntervalFormatter stringForTimeIntervalFromDate:[NSDate date] toDate:cell.prediction.targetDate];
+
+    // set journal entry
+    cell.journalEntryLabel.text = cell.prediction.journalEntry;
+    [cell.journalEntryLabel setHidden:YES];
+    
+    
     
     //set image
     if (cell.prediction.type == BTCHighPrediction) {
@@ -169,11 +187,48 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     else if (cell.prediction.type == BTCLowPrediction){
         cell.predictionArrowImage.image = [UIImage imageNamed:@"downarrow"];
     }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(PredictionTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView beginUpdates]; // tell the table you're about to start making changes
+    
+    // If the index path of the currently expanded cell is the same as the index that
+    // has just been tapped set the expanded index to nil so that there aren't any
+    // expanded cells, otherwise, set the expanded index to the index that has just
+    // been selected.
+
+    PredictionTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if ([indexPath compare:self.expandedIndexPath] == NSOrderedSame) {
+        self.expandedIndexPath = nil;
+        [cell.journalEntryLabel setHidden:YES];
+    } else {
+        self.expandedIndexPath = indexPath;
+        [cell.journalEntryLabel setHidden:NO];
+    }
+    
+    [tableView endUpdates]; // tell the table you're done making your changes
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Compares the index path for the current cell to the index path stored in the expanded
+    // index path variable. If the two match, return a height of 100 points, otherwise return
+    // a height of 44 points.
+    if ([indexPath compare:self.expandedIndexPath] == NSOrderedSame) {
+        return 120.0; // Expanded height
+    }
+    return 68.0; // Normal height
+}
+
+
 
 #pragma mark - pop button methods
 - (IBAction)upArrowButtonTouched:(UIButton *)sender {
@@ -302,5 +357,6 @@ static BOOL BTCpasscodeViewControllerHasBeenShown = NO;
     
     return timeToTargetDate;
 }
+
 
 @end

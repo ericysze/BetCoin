@@ -33,9 +33,13 @@
     [self updateBTCTickerLabel];
     
     [self.predictionButton setBackgroundImage:[UIImage imageNamed:([self.upOrDown isEqualToString:@"up"] ? @"orangeuparrow" : @"orangedownarrow")] forState:UIControlStateNormal];
-    [self textViewBorder];
+    [self textViewAdjustments];
     self.internetReachableFoo = [Reachability reachabilityForInternetConnection];
     [self datePickerSettings];
+    
+//    self.datePicker.backgroundColor = [UIColor colorWithRed:100.0 green:153.0 blue:0.0 alpha:1];
+    
+    [self.datePicker setValue:[UIColor whiteColor] forKey:@"textColor"];
 }
 
 -(void)updateBTCTickerLabel{
@@ -108,9 +112,13 @@
 
 - (void)datePickerSettings {
     [self.datePicker setMinimumDate:self.datePicker.date];
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM-dd-YYYY HH:mm:ss"];
+//    [dateFormatter setDateFormat:@"MM-dd-YYYY HH:mm:ss"];
+    [dateFormatter setDateFormat:@"MM-dd-YYY hh:mm a"];
+//    NSString* dateString = [dateFormatter stringFromDate:date];
     self.dateString = [dateFormatter stringFromDate:self.datePicker.date];
+    
     
     NSLog(@"The Date: %@", self.dateString);
 }
@@ -172,9 +180,10 @@
 
 #pragma mark - View Layout
 
-- (void)textViewBorder {
+- (void)textViewAdjustments {
     UIColor *borderColor = [UIColor colorWithRed:255.0/255.0 green:153.0/255.0 blue:0.0/255.0 alpha:1.0];
     
+    self.textView.backgroundColor = [UIColor whiteColor];
     self.textView.layer.borderColor = borderColor.CGColor;
     self.textView.layer.borderWidth = 1.0;
     self.textView.layer.cornerRadius = 5.0;
