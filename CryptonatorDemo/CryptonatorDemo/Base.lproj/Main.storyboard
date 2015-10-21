@@ -605,7 +605,7 @@
                                 </constraints>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klu-sL-aVF">
-                                <rect key="frame" x="389" y="515" width="70" height="27"/>
+                                <rect key="frame" x="389" y="547" width="70" height="27"/>
                                 <animations/>
                                 <state key="normal" image="tweetbutton"/>
                                 <connections>
@@ -613,7 +613,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCM-9a-h3e">
-                                <rect key="frame" x="514" y="511" width="36" height="36"/>
+                                <rect key="frame" x="514" y="543" width="36" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Post">
@@ -624,7 +624,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-Nj-NAi">
-                                <rect key="frame" x="50" y="376" width="500" height="130"/>
+                                <rect key="frame" x="50" y="408" width="500" height="130"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="JhS-hv-fAF"/>
@@ -671,7 +671,7 @@
                         <color key="backgroundColor" red="0.014331773690000001" green="0.83296875000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BAF-z8-8Ph" firstAttribute="top" secondItem="0Wr-Kq-GhY" secondAttribute="bottom" constant="50" id="0nu-mO-qJe"/>
-                            <constraint firstItem="5bv-Nj-NAi" firstAttribute="top" secondItem="FQD-yS-dyy" secondAttribute="bottom" constant="8" id="3mW-WL-tSL"/>
+                            <constraint firstItem="5bv-Nj-NAi" firstAttribute="top" secondItem="FQD-yS-dyy" secondAttribute="bottom" constant="40" id="3mW-WL-tSL"/>
                             <constraint firstAttribute="trailing" secondItem="iCM-9a-h3e" secondAttribute="trailing" constant="50" id="5Yj-hp-9HU"/>
                             <constraint firstItem="iCM-9a-h3e" firstAttribute="leading" secondItem="klu-sL-aVF" secondAttribute="trailing" constant="55" id="8R0-yY-QTI"/>
                             <constraint firstItem="5bv-Nj-NAi" firstAttribute="leading" secondItem="fDr-Rf-sUD" secondAttribute="leading" constant="50" id="AVo-B8-0N9"/>

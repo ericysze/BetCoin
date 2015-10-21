@@ -185,7 +185,7 @@
     
     self.textView.backgroundColor = [UIColor whiteColor];
     self.textView.layer.borderColor = borderColor.CGColor;
-    self.textView.layer.borderWidth = 1.0;
+    self.textView.layer.borderWidth = 2.0;
     self.textView.layer.cornerRadius = 5.0;
 }
 
